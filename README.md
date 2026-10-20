@@ -42,6 +42,10 @@ npm start         # http://127.0.0.1:8000
 
 ## Publier sur GitHub Pages
 
+Guide pas à pas, installation sur téléphone et dépannage : **[DEPLOIEMENT.md](DEPLOIEMENT.md)**.
+
+En bref :
+
 1. Créez un dépôt sur GitHub et poussez le projet sur la branche `main`.
 2. Dans le dépôt : **Settings → Pages → Build and deployment → Source : GitHub Actions**.
 3. Le workflow `Déploiement GitHub Pages` vérifie le code puis publie le dossier `site/`.

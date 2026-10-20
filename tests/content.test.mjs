@@ -140,6 +140,16 @@ test('index.html : CSP stricte, aucun script inline ni ressource externe', async
   assert.doesNotMatch(html, /(?:src|href)="\/\//i, 'ressource externe interdite (URL relative au protocole)');
 });
 
+test('installation sur téléphone : manifeste et icônes présents', async () => {
+  const manifest = await readJSON('manifest.webmanifest');
+  assert.equal(manifest.start_url, './', 'start_url relatif (requis sous /<dépôt>/ sur GitHub Pages)');
+  for (const icon of manifest.icons) {
+    assert.ok(!icon.src.startsWith('/'), `chemin d'icône relatif attendu : ${icon.src}`);
+    await readFile(path.join(root, icon.src));
+  }
+  await readFile(path.join(root, 'assets/apple-touch-icon.png'));
+});
+
 test('JavaScript : aucune API d\'injection HTML ni de stockage', async () => {
   const dir = path.join(root, 'assets/js');
   for (const file of await readdir(dir)) {
