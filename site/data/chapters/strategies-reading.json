@@ -1,0 +1,93 @@
+{
+  "id": "strategies-reading",
+  "title": "Stratégies Reading",
+  "category": "Méthode",
+  "summary": "Gagner du temps en partie 5, raisonner en partie 6, lire efficacement en partie 7.",
+  "toeicParts": [5, 6, 7],
+  "sections": [
+    {
+      "heading": "Partie 5 : aller vite",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "**Regardez d'abord les quatre options** pour identifier le type de question : formes d'un même mot, temps verbaux, prépositions, vocabulaire.",
+            "Pour les formes de mots, analysez seulement les mots autour du blanc.",
+            "Pour le vocabulaire, lisez la phrase entière et cherchez les collocations (make a decision, meet a deadline).",
+            "Ne passez pas plus de 30 secondes par question."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Partie 6 : lire le contexte",
+      "blocks": [
+        { "type": "p", "text": "Chaque texte comporte quatre blancs, dont un où il faut **insérer une phrase entière**. Contrairement à la partie 5, la bonne réponse dépend souvent du texte autour." },
+        {
+          "type": "list",
+          "items": [
+            "Temps verbal : regardez les dates et le temps des autres verbes du texte.",
+            "Pronoms (it, they, this) : vérifiez à quoi ils renvoient dans la phrase précédente.",
+            "Phrase à insérer : elle doit faire la **transition** entre l'idée précédente et la suivante."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Partie 7 : lire avec un objectif",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Repérez le **type de document** (e-mail, annonce, formulaire, article, chat) et l'en-tête : expéditeur, destinataire, date, objet.",
+            "Lisez la question, puis cherchez l'information dans le texte (**scanning**) plutôt que de tout lire en détail.",
+            "Questions « NOT true » : vérifiez les quatre options une par une.",
+            "Questions « What is suggested / implied » : la réponse n'est pas écrite telle quelle, il faut la déduire.",
+            "Documents multiples : au moins une question demande de **croiser** deux documents (ex. une date dans l'e-mail + un tarif dans la grille)."
+          ]
+        },
+        { "type": "tip", "text": "Commencez par les documents courts (annonces, SMS) et gardez les triples documents pour la fin si vous manquez de temps." }
+      ]
+    },
+    {
+      "heading": "Questions de synonyme",
+      "blocks": [
+        { "type": "p", "text": "« In paragraph 2, line 3, the word “address” is closest in meaning to… ». Le sens dépend du contexte : remplacez le mot par chaque option et gardez celle qui conserve le sens de la phrase." },
+        { "type": "example", "en": "We need to **address** the customers' complaints quickly.", "fr": "Ici, address = deal with (traiter), pas une adresse postale." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "En partie 5, que faut-il regarder en premier ?",
+      "choices": ["La phrase entière", "Les quatre options", "La question suivante", "Le numéro de la question"],
+      "answer": 1,
+      "explanation": "Les options indiquent le **type de question**, ce qui dit ce qu'il faut analyser."
+    },
+    {
+      "q": "« The firm will **launch** its new line in May. » Le mot le plus proche de « launch » est :",
+      "choices": ["throw", "introduce", "eat", "cancel"],
+      "answer": 1,
+      "explanation": "Dans un contexte commercial, launch = lancer un produit = **introduce**."
+    },
+    {
+      "q": "En partie 7, une question « What is NOT mentioned… » demande de :",
+      "choices": ["trouver une phrase dans le texte", "vérifier chaque option et éliminer celles qui sont citées", "relire uniquement le titre", "choisir l'option la plus longue"],
+      "answer": 1,
+      "explanation": "Pour les questions **NOT**, on élimine les trois options présentes dans le texte."
+    },
+    {
+      "q": "En partie 6, quel indice aide à choisir le bon temps verbal ?",
+      "choices": ["La longueur du texte", "Les dates et les autres verbes du texte", "La première lettre du mot", "Le nombre de paragraphes"],
+      "answer": 1,
+      "explanation": "Le **contexte temporel** du texte (dates, autres verbes) détermine le temps attendu."
+    },
+    {
+      "q": "« Please **address** your questions to the HR department. » Ici, address signifie :",
+      "choices": ["direct", "locate", "repair", "delay"],
+      "answer": 0,
+      "explanation": "Address something to someone = adresser, **diriger** vers quelqu'un."
+    }
+  ]
+}

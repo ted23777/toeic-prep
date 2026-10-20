@@ -1,0 +1,149 @@
+{
+  "id": "vocabulaire-business",
+  "title": "Vocabulaire professionnel",
+  "category": "Vocabulaire",
+  "summary": "Les champs lexicaux récurrents : RH, réunions, finance, logistique, voyages d'affaires.",
+  "toeicParts": [3, 4, 5, 6, 7],
+  "sections": [
+    {
+      "heading": "Ressources humaines",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["applicant / candidate", "candidat"],
+            ["résumé (US) / CV (UK)", "CV"],
+            ["to hire / to recruit", "embaucher / recruter"],
+            ["to lay off", "licencier (raison économique)"],
+            ["to promote / a promotion", "promouvoir / une promotion"],
+            ["a raise (US) / a rise (UK)", "une augmentation de salaire"],
+            ["benefits", "avantages sociaux"],
+            ["a performance review", "un entretien d'évaluation"],
+            ["to resign / to retire", "démissionner / partir à la retraite"],
+            ["a staff member / personnel", "un membre du personnel / le personnel"]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Réunions et projets",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["agenda", "ordre du jour (pas « agenda »)"],
+            ["to postpone / to put off", "reporter"],
+            ["to reschedule", "reprogrammer"],
+            ["to call off / to cancel", "annuler"],
+            ["minutes", "compte rendu de réunion"],
+            ["a deadline", "une date limite"],
+            ["to be behind schedule / ahead of schedule", "être en retard / en avance sur le planning"],
+            ["a quarterly report", "un rapport trimestriel"],
+            ["a board of directors", "un conseil d'administration"]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Commerce, finance et logistique",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["an invoice / a receipt", "une facture / un reçu"],
+            ["a refund / to reimburse", "un remboursement / rembourser"],
+            ["revenue / profit / loss", "chiffre d'affaires / bénéfice / perte"],
+            ["a quote / an estimate", "un devis"],
+            ["an order / to place an order", "une commande / passer commande"],
+            ["shipping / delivery", "expédition / livraison"],
+            ["out of stock / in stock", "en rupture / en stock"],
+            ["a warehouse", "un entrepôt"],
+            ["a supplier / a vendor", "un fournisseur"],
+            ["a warranty", "une garantie"]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Voyages d'affaires et événements",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["an itinerary", "un itinéraire, un programme de voyage"],
+            ["to book / a reservation", "réserver / une réservation"],
+            ["a boarding pass", "une carte d'embarquement"],
+            ["a layover / a connection", "une escale / une correspondance"],
+            ["accommodation(s)", "hébergement"],
+            ["a venue", "un lieu (d'événement)"],
+            ["a keynote speaker", "l'orateur principal"],
+            ["to register / registration fee", "s'inscrire / frais d'inscription"],
+            ["a banquet / a reception", "un dîner officiel / une réception"]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Faux amis fréquents",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Mot anglais", "Sens réel", "À ne pas confondre avec"],
+          "rows": [
+            ["actually", "en fait", "actuellement = currently"],
+            ["eventually", "finalement, à terme", "éventuellement = possibly"],
+            ["sensible", "raisonnable", "sensible = sensitive"],
+            ["library", "bibliothèque", "librairie = bookshop"],
+            ["to attend", "assister à", "attendre = to wait"],
+            ["to assist", "aider", "assister à = to attend"],
+            ["a lecture", "un cours magistral, une conférence", "une lecture = a reading"],
+            ["a coin", "une pièce de monnaie", "un coin = a corner"],
+            ["to achieve", "réaliser, atteindre", "achever = to complete"]
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Due to a scheduling conflict, the board meeting has been ______ until next week.",
+      "choices": ["postponed", "attended", "hired", "refunded"],
+      "answer": 0,
+      "explanation": "« reporté à la semaine prochaine » → **postponed**."
+    },
+    {
+      "q": "Customers who are not satisfied can request a full ______ within 30 days.",
+      "choices": ["invoice", "refund", "quote", "warehouse"],
+      "answer": 1,
+      "explanation": "Demander à être remboursé → a **refund**."
+    },
+    {
+      "q": "More than 300 delegates are expected to ______ the conference in Berlin.",
+      "choices": ["assist", "attend", "wait", "achieve"],
+      "answer": 1,
+      "explanation": "« assister à » se dit **attend** (to assist = aider)."
+    },
+    {
+      "q": "Please review the meeting ______ before Monday so we can stay on track.",
+      "choices": ["agenda", "receipt", "layover", "venue"],
+      "answer": 0,
+      "explanation": "L'**agenda** est l'ordre du jour d'une réunion."
+    },
+    {
+      "q": "What does « Eventually, the company opened a branch in Asia » mean?",
+      "choices": ["Possibly, the company opened…", "Finally, the company opened…", "Currently, the company is opening…", "The company never opened…"],
+      "answer": 1,
+      "explanation": "**Eventually** = finalement, au bout du compte. Faux ami de « éventuellement »."
+    },
+    {
+      "q": "The item you ordered is currently out of ______ but will be available next week.",
+      "choices": ["order", "stock", "supply", "shipping"],
+      "answer": 1,
+      "explanation": "Expression figée : **out of stock** (en rupture de stock)."
+    }
+  ]
+}

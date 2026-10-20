@@ -1,0 +1,93 @@
+{
+  "id": "passif-et-relatives",
+  "title": "Voix passive et relatives",
+  "category": "Grammaire",
+  "summary": "Actif ou passif ? Who, which, whose, that : choisir le bon pronom relatif.",
+  "toeicParts": [5, 6],
+  "sections": [
+    {
+      "heading": "Former le passif",
+      "blocks": [
+        { "type": "p", "text": "Passif = **be** conjugué au temps voulu + **participe passé**. On l'utilise quand l'auteur de l'action est inconnu, évident ou moins important que l'action elle-même." },
+        {
+          "type": "table",
+          "head": ["Temps", "Passif"],
+          "rows": [
+            ["Présent simple", "The reports **are reviewed** weekly."],
+            ["Prétérit", "The contract **was signed** yesterday."],
+            ["Present perfect", "The order **has been shipped**."],
+            ["Futur", "The results **will be announced** on Monday."],
+            ["Modal", "The form **must be completed** in English."],
+            ["Continu", "The office **is being renovated**."]
+          ]
+        },
+        { "type": "tip", "text": "Pour choisir entre actif et passif, demandez-vous : le sujet **fait**-il l'action ou la **subit**-il ? Un verbe transitif suivi directement d'un complément d'objet → actif. Pas de complément → souvent passif." }
+      ]
+    },
+    {
+      "heading": "Les pronoms relatifs",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Pronom", "Antécédent", "Exemple"],
+          "rows": [
+            ["**who**", "personne (sujet)", "the engineer **who** designed the app"],
+            ["**whom**", "personne (complément, style formel)", "the candidate **whom** we interviewed"],
+            ["**which**", "chose", "the report **which** was sent"],
+            ["**that**", "personne ou chose (relative déterminative)", "the product **that** sells best"],
+            ["**whose**", "possession (dont le/la)", "the client **whose** order was delayed"],
+            ["**where**", "lieu", "the hotel **where** we stayed"],
+            ["**when**", "moment", "the day **when** the store opened"]
+          ]
+        },
+        { "type": "warning", "text": "**that** ne s'emploie pas après une virgule ni après une préposition : « the system, **which** was installed… » ; « the person **to whom** I spoke »." }
+      ]
+    },
+    {
+      "heading": "Relatives réduites",
+      "blocks": [
+        { "type": "p", "text": "On peut supprimer le pronom et le verbe be : il reste un participe." },
+        { "type": "example", "en": "The documents **(which were) submitted** after the deadline will not be accepted.", "fr": "Les documents soumis après la date limite ne seront pas acceptés." },
+        { "type": "example", "en": "Visitors **(who are) arriving** after 6 p.m. should use the side entrance.", "fr": "Les visiteurs arrivant après 18 h doivent utiliser l'entrée latérale." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "The annual budget ______ by the board next Tuesday.",
+      "choices": ["will approve", "will be approved", "is approving", "approves"],
+      "answer": 1,
+      "explanation": "Le budget subit l'action (approuvé par le conseil) → **passif futur** : will be approved."
+    },
+    {
+      "q": "The supplier ______ products were damaged has offered a full refund.",
+      "choices": ["who", "which", "whose", "whom"],
+      "answer": 2,
+      "explanation": "Possession (les produits du fournisseur) → **whose**."
+    },
+    {
+      "q": "The new headquarters, ______ opened last month, can host 800 employees.",
+      "choices": ["that", "which", "who", "where"],
+      "answer": 1,
+      "explanation": "Antécédent = chose, après une virgule → **which** (that est exclu après une virgule)."
+    },
+    {
+      "q": "All invoices must ______ within 30 days.",
+      "choices": ["pay", "be paid", "paying", "have paid"],
+      "answer": 1,
+      "explanation": "Les factures sont payées (passif) après un modal → **be paid**."
+    },
+    {
+      "q": "Applications ______ after the deadline will not be considered.",
+      "choices": ["receiving", "received", "receive", "are received"],
+      "answer": 1,
+      "explanation": "Relative réduite au sens passif (which are received) → **received**."
+    },
+    {
+      "q": "The office is currently ______, so meetings will be held in Building B.",
+      "choices": ["renovating", "being renovated", "renovated by", "renovate"],
+      "answer": 1,
+      "explanation": "Action en cours subie par le bureau → **passif continu** : is being renovated."
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "conditionnels",
+  "title": "Les conditionnels",
+  "category": "Grammaire",
+  "summary": "If, unless, provided that, should… Les trois types de conditionnels et leurs variantes.",
+  "toeicParts": [5, 6],
+  "sections": [
+    {
+      "heading": "Les trois structures de base",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Type", "Proposition en if", "Proposition principale", "Sens"],
+          "rows": [
+            ["1 — réel", "if + **présent**", "**will** + base verbale", "condition possible"],
+            ["2 — irréel présent", "if + **prétérit**", "**would** + base verbale", "hypothèse peu probable ou imaginaire"],
+            ["3 — irréel passé", "if + **past perfect**", "**would have** + participe passé", "regret, passé qui ne s'est pas produit"]
+          ]
+        },
+        { "type": "example", "en": "If the shipment **arrives** today, we **will** process it tomorrow.", "fr": "Si la livraison arrive aujourd'hui, nous la traiterons demain." },
+        { "type": "example", "en": "If we **had** more staff, we **would** open on Sundays.", "fr": "Si nous avions plus de personnel, nous ouvririons le dimanche." },
+        { "type": "example", "en": "If they **had booked** earlier, they **would have gotten** a discount.", "fr": "S'ils avaient réservé plus tôt, ils auraient eu une réduction." },
+        { "type": "warning", "text": "Jamais de **will** ou **would** juste après **if** : « If it **rains** », pas « If it will rain »." }
+      ]
+    },
+    {
+      "heading": "Les autres conjonctions de condition",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**unless** = if … not (à moins que) : We will ship today **unless** you cancel.",
+            "**provided (that)** / **providing (that)** / **as long as** = à condition que.",
+            "**in case** = au cas où (précaution) : Take an umbrella **in case** it rains.",
+            "**otherwise** = sinon (adverbe, souvent après un point ou un point-virgule)."
+          ]
+        },
+        { "type": "warning", "text": "**unless** contient déjà la négation : « unless you **don't** pay » est incorrect au sens de « si vous ne payez pas »." }
+      ]
+    },
+    {
+      "heading": "L'inversion formelle",
+      "blocks": [
+        { "type": "p", "text": "Dans le style soutenu des e-mails professionnels, **if** peut disparaître au profit d'une inversion. Très fréquent au TOEIC :" },
+        { "type": "example", "en": "**Should** you have any questions, please contact us.", "fr": "= If you have any questions… (Si vous avez des questions…)" },
+        { "type": "example", "en": "**Had** we known about the delay, we would have informed the client.", "fr": "= If we had known… (Si nous avions su…)" },
+        { "type": "tip", "text": "Une phrase qui commence par un blanc suivi de « you have any questions » ou « you need assistance » → la réponse est presque toujours **Should**." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "If the client ______ the proposal, we will start next week.",
+      "choices": ["will approve", "approves", "approved", "would approve"],
+      "answer": 1,
+      "explanation": "Conditionnel de type 1 : if + **présent**, will dans la principale."
+    },
+    {
+      "q": "______ you require further information, please do not hesitate to contact us.",
+      "choices": ["Unless", "Should", "Would", "Provided"],
+      "answer": 1,
+      "explanation": "Inversion formelle : **Should** you require = If you require."
+    },
+    {
+      "q": "The order will be shipped tomorrow ______ payment is received today.",
+      "choices": ["unless", "provided that", "otherwise", "in spite of"],
+      "answer": 1,
+      "explanation": "Le sens est « à condition que » → **provided that**."
+    },
+    {
+      "q": "If the team ______ more time, they would have finished the report.",
+      "choices": ["had", "had had", "has", "would have"],
+      "answer": 1,
+      "explanation": "Type 3 (would have finished) → if + **past perfect** : had had."
+    },
+    {
+      "q": "Employees cannot enter the lab ______ they wear protective glasses.",
+      "choices": ["if", "unless", "in case", "as long as"],
+      "answer": 1,
+      "explanation": "« ne peuvent pas entrer **à moins qu'**ils ne portent » → **unless**."
+    }
+  ]
+}

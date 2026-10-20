@@ -1,0 +1,98 @@
+{
+  "id": "temps-verbaux",
+  "title": "Les temps verbaux",
+  "category": "Grammaire",
+  "summary": "Présent simple ou continu, present perfect ou prétérit, futur : les choix testés en partie 5.",
+  "toeicParts": [5, 6],
+  "sections": [
+    {
+      "heading": "Présent simple et présent continu",
+      "blocks": [
+        { "type": "p", "text": "Le **présent simple** exprime une habitude, une vérité générale ou un horaire fixe. Le **présent continu** (be + V-ing) exprime une action en cours ou un projet déjà organisé." },
+        { "type": "example", "en": "The shuttle **leaves** every 20 minutes.", "fr": "La navette part toutes les 20 minutes (horaire)." },
+        { "type": "example", "en": "Ms. Lee **is meeting** the suppliers tomorrow.", "fr": "Mme Lee rencontre les fournisseurs demain (rendez-vous prévu)." },
+        { "type": "tip", "text": "Repérez les marqueurs : **usually, every, always, often** → présent simple ; **now, currently, at the moment** → présent continu." },
+        { "type": "warning", "text": "Les verbes d'état (**know, believe, belong, need, own, prefer**) ne se mettent normalement pas au continu : « I **know** the answer », pas « I am knowing »." }
+      ]
+    },
+    {
+      "heading": "Present perfect ou prétérit",
+      "blocks": [
+        { "type": "p", "text": "Le **prétérit** (V-ed) situe l'action à un moment passé **révolu et daté**. Le **present perfect** (have + participe passé) relie le passé au présent : bilan, expérience, action qui dure encore." },
+        {
+          "type": "table",
+          "head": ["Prétérit", "Present perfect"],
+          "rows": [
+            ["yesterday, last week, in 2019, two days **ago**", "since, for, already, yet, so far, recently, ever, never"],
+            ["We **signed** the contract last Monday.", "We **have** already **signed** the contract."]
+          ]
+        },
+        { "type": "p", "text": "**Since** + point de départ (since 2020, since Monday) ; **for** + durée (for three years)." },
+        { "type": "example", "en": "Mr. Patel **has worked** here **since** 2018.", "fr": "M. Patel travaille ici depuis 2018 (et y travaille encore)." },
+        { "type": "warning", "text": "En français on dit « je travaille ici depuis 2018 » au présent ; en anglais, il faut le **present perfect**." }
+      ]
+    },
+    {
+      "heading": "Exprimer le futur",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**will** + base verbale : décision prise sur le moment, prédiction, promesse.",
+            "**be going to** : intention déjà décidée, prédiction fondée sur un indice présent.",
+            "**présent continu** : rendez-vous ou arrangement fixé.",
+            "**présent simple** : programme officiel, horaire."
+          ]
+        },
+        { "type": "warning", "text": "Après **when, before, after, as soon as, until, once** à sens futur, on utilise le **présent**, pas will : « We will call you **when** the package **arrives** »." }
+      ]
+    },
+    {
+      "heading": "Plus-que-parfait et futur antérieur",
+      "blocks": [
+        { "type": "p", "text": "Le **past perfect** (had + participe passé) indique une action antérieure à une autre action passée. Le **future perfect** (will have + participe passé) indique qu'une action sera terminée avant un moment futur." },
+        { "type": "example", "en": "By the time the CEO arrived, the meeting **had** already **started**.", "fr": "Quand le PDG est arrivé, la réunion avait déjà commencé." },
+        { "type": "example", "en": "By next June, the team **will have completed** the migration.", "fr": "D'ici juin prochain, l'équipe aura terminé la migration." },
+        { "type": "tip", "text": "**By the time** + passé → past perfect dans l'autre proposition ; **by** + date future → future perfect." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "The company ______ its headquarters to Lyon in 2021.",
+      "choices": ["has moved", "moved", "moves", "has been moving"],
+      "answer": 1,
+      "explanation": "« in 2021 » est une date passée révolue → **prétérit** (moved)."
+    },
+    {
+      "q": "Ms. Garcia ______ for the firm for over ten years.",
+      "choices": ["works", "is working", "has worked", "worked"],
+      "answer": 2,
+      "explanation": "« for over ten years » + situation qui continue → **present perfect** (has worked)."
+    },
+    {
+      "q": "Please call the front desk as soon as your guests ______.",
+      "choices": ["will arrive", "arrive", "arrived", "are going to arrive"],
+      "answer": 1,
+      "explanation": "Après **as soon as** à sens futur, on emploie le **présent** : arrive."
+    },
+    {
+      "q": "By the time we reached the station, the train ______.",
+      "choices": ["already left", "has already left", "had already left", "will have left"],
+      "answer": 2,
+      "explanation": "Action antérieure à une autre action passée (reached) → **past perfect** : had already left."
+    },
+    {
+      "q": "The new software ______ to all employees by the end of the month.",
+      "choices": ["will have been distributed", "has distributed", "distributed", "is distributing"],
+      "answer": 0,
+      "explanation": "« by the end of the month » (futur) + sens passif (le logiciel est distribué) → **future perfect passif**."
+    },
+    {
+      "q": "Mr. Kim usually ______ the weekly report on Fridays.",
+      "choices": ["is submitting", "submits", "has submitted", "submit"],
+      "answer": 1,
+      "explanation": "« usually » + « on Fridays » = habitude → **présent simple**, 3e personne : submits."
+    }
+  ]
+}

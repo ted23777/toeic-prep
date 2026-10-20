@@ -1,0 +1,100 @@
+{
+  "id": "strategies-listening",
+  "title": "Stratégies Listening",
+  "category": "Méthode",
+  "summary": "Les pièges et les réflexes à adopter pour chacune des parties 1 à 4.",
+  "toeicParts": [1, 2, 3, 4],
+  "sections": [
+    {
+      "heading": "Partie 1 : photographies",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Pendant la lecture des consignes, observez la photo : qui, quoi, où, quels objets.",
+            "Méfiez-vous des **mots justes dans une phrase fausse** : un objet visible sur la photo, mais une action inexacte.",
+            "Distinguez **is being + participe** (action en cours) et **has been + participe** (état résultant). « The chairs **have been stacked** » : les chaises sont empilées ; « are being stacked » : quelqu'un est en train de les empiler.",
+            "Éliminez les phrases qui décrivent ce qu'on ne peut pas voir (intentions, sentiments)."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Partie 2 : questions-réponses",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Concentrez-vous sur le **premier mot** de la question : Who, When, Where, Why, How long…",
+            "Une question en **When** n'appelle pas une réponse avec un lieu ; une question en **Where** n'appelle pas une date.",
+            "Piège des **sons similaires** : une réponse qui reprend un mot de la question ou un mot qui lui ressemble est souvent fausse.",
+            "Les bonnes réponses sont souvent **indirectes** : « Where is the meeting? » → « Check the e-mail from Ms. Chen. »"
+          ]
+        },
+        { "type": "tip", "text": "Les questions oui/non n'ont pas toujours « Yes » ou « No » dans la bonne réponse. Une réponse comme « I haven't decided yet » est souvent correcte." }
+      ]
+    },
+    {
+      "heading": "Parties 3 et 4 : conversations et monologues",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Pendant que l'audio précédent se termine et que les réponses sont lues, **lisez les trois questions** suivantes (pas forcément les réponses).",
+            "Repérez les mots-clés : who / where / what problem / what will the man do next.",
+            "Les questions suivent en général **l'ordre de l'audio** : la réponse à la question 1 arrive au début.",
+            "La dernière question porte souvent sur **la suite** (what will … do next) : écoutez la fin attentivement.",
+            "Pour les questions avec graphique, repérez à l'avance ce qui diffère entre les options."
+          ]
+        },
+        { "type": "warning", "text": "Les bonnes réponses sont souvent des **reformulations** : « I'll give you a lift » → « Offer a ride ». Une option qui répète mot pour mot l'audio est suspecte." }
+      ]
+    },
+    {
+      "heading": "S'entraîner au quotidien",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Écoutez des accents variés : américain, britannique, canadien, australien.",
+            "Pratiquez la **dictée** : réécoutez une phrase et écrivez-la mot à mot pour repérer les sons liés.",
+            "Faites du **shadowing** : répétez à voix haute juste après le locuteur."
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "On entend « When does the training session start? ». Quelle réponse est la plus logique ?",
+      "choices": ["In the main conference room.", "Right after lunch.", "Yes, I trained a lot.", "Mr. Davis is leading it."],
+      "answer": 1,
+      "explanation": "**When** appelle une indication de temps. « trained » est un piège de son similaire."
+    },
+    {
+      "q": "Une photo montre des cartons déjà empilés, sans personne. Quelle phrase convient ?",
+      "choices": ["Boxes are being stacked.", "Some boxes have been stacked.", "A man is carrying boxes.", "The boxes are being opened."],
+      "answer": 1,
+      "explanation": "Personne n'agit : c'est un **état résultant** → have been stacked."
+    },
+    {
+      "q": "Quand lire les questions des parties 3 et 4 ?",
+      "choices": ["Après l'audio", "Pendant l'audio uniquement", "Avant le début de l'audio correspondant", "Jamais, il faut tout écouter"],
+      "answer": 2,
+      "explanation": "Lire les questions **avant** permet de savoir quoi chercher dans l'audio."
+    },
+    {
+      "q": "Une option reprend exactement un mot entendu dans la question de la partie 2. Elle est…",
+      "choices": ["toujours correcte", "souvent un piège", "à cocher par défaut", "hors sujet"],
+      "answer": 1,
+      "explanation": "La répétition d'un mot ou d'un son proche est un **piège classique**."
+    },
+    {
+      "q": "« Why don't we take a taxi? » Quelle est la fonction de cette question ?",
+      "choices": ["Demander une raison", "Faire une suggestion", "Refuser une offre", "Exprimer un regret"],
+      "answer": 1,
+      "explanation": "**Why don't we…?** est une **suggestion**, pas une demande de raison. Bonne réponse typique : « Good idea. »"
+    }
+  ]
+}

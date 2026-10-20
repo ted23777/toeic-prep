@@ -1,0 +1,94 @@
+{
+  "id": "formes-des-mots",
+  "title": "Nature et forme des mots",
+  "category": "Grammaire",
+  "summary": "Nom, verbe, adjectif ou adverbe ? Le type de question le plus fréquent en partie 5.",
+  "toeicParts": [5, 6],
+  "sections": [
+    {
+      "heading": "Le principe",
+      "blocks": [
+        { "type": "p", "text": "Beaucoup de questions proposent quatre formes du même mot : **success, succeed, successful, successfully**. Pas besoin de comprendre toute la phrase : il suffit d'identifier **la fonction du mot manquant**." }
+      ]
+    },
+    {
+      "heading": "Reconnaître la fonction attendue",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Position du blanc", "Nature attendue", "Exemple"],
+          "rows": [
+            ["après un article (a, an, the) ou un possessif, sans nom derrière", "**nom**", "the **decision**, their **approval**"],
+            ["entre un article et un nom", "**adjectif**", "a **reliable** supplier"],
+            ["après be, become, seem, remain", "**adjectif**", "The results are **impressive**."],
+            ["devant un adjectif ou un autre adverbe", "**adverbe**", "an **extremely** busy week"],
+            ["autour d'un verbe (avant, après, entre auxiliaire et verbe)", "**adverbe**", "She **carefully** reviewed the file. / has **recently** opened"],
+            ["après un sujet, sans autre verbe conjugué", "**verbe**", "The manager **approved** the plan."]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Les suffixes à reconnaître",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Noms** : -tion, -sion, -ment, -ness, -ity, -ance, -ence, -er/-or (personne), -ee (personne qui reçoit), -ship.",
+            "**Adjectifs** : -ful, -less, -able, -ible, -ive, -ous, -al, -ic, -ent, -ant.",
+            "**Adverbes** : -ly (attention : friendly, costly, timely sont des **adjectifs**).",
+            "**Verbes** : -ize/-ise, -ify, -en, -ate."
+          ]
+        },
+        { "type": "warning", "text": "**employer** = l'employeur, **employee** = l'employé. **applicant** = le candidat, **application** = la candidature." }
+      ]
+    },
+    {
+      "heading": "Participe présent ou participe passé ?",
+      "blocks": [
+        { "type": "p", "text": "Les adjectifs en **-ing** décrivent ce qui provoque l'effet ; ceux en **-ed** décrivent ce que ressent ou subit la personne." },
+        { "type": "example", "en": "The results were **disappointing**. The investors were **disappointed**.", "fr": "Les résultats étaient décevants. Les investisseurs étaient déçus." },
+        { "type": "example", "en": "Please read the **attached** document.", "fr": "Veuillez lire le document joint (le document est joint, sens passif)." },
+        { "type": "tip", "text": "Repères fréquents au TOEIC : **attached, enclosed, revised, updated, limited, experienced, qualified** (sens passif ou état) vs **existing, remaining, leading, upcoming, outstanding** (sens actif)." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "The marketing team made a ______ decision to postpone the launch.",
+      "choices": ["wise", "wisely", "wisdom", "wiser than"],
+      "answer": 0,
+      "explanation": "Entre l'article « a » et le nom « decision » → **adjectif** : wise."
+    },
+    {
+      "q": "Ms. Tanaka ______ reviewed every contract before signing it.",
+      "choices": ["careful", "carefully", "care", "carefulness"],
+      "answer": 1,
+      "explanation": "Le blanc modifie le verbe « reviewed » → **adverbe** : carefully."
+    },
+    {
+      "q": "The ______ of the new branch is scheduled for next spring.",
+      "choices": ["open", "opened", "opening", "openly"],
+      "answer": 2,
+      "explanation": "Après « The » et avant « of » → **nom** : opening."
+    },
+    {
+      "q": "Please find the ______ invoice for your recent purchase.",
+      "choices": ["attaching", "attached", "attach", "attachment"],
+      "answer": 1,
+      "explanation": "La facture est jointe (sens passif) → **attached**."
+    },
+    {
+      "q": "The new policy has been ______ effective in reducing costs.",
+      "choices": ["surprise", "surprising", "surprisingly", "surprised"],
+      "answer": 2,
+      "explanation": "Le blanc précède l'adjectif « effective » → **adverbe** : surprisingly."
+    },
+    {
+      "q": "All ______ must complete the online form by June 1.",
+      "choices": ["apply", "applicants", "applicable", "applied"],
+      "answer": 1,
+      "explanation": "Sujet de la phrase, des personnes → **nom** : applicants."
+    }
+  ]
+}

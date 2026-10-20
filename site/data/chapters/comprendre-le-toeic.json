@@ -1,0 +1,107 @@
+{
+  "id": "comprendre-le-toeic",
+  "title": "Comprendre l'épreuve",
+  "category": "Méthode",
+  "summary": "Format du TOEIC Listening & Reading, les 7 parties, le barème et comment s'organiser.",
+  "toeicParts": [1, 2, 3, 4, 5, 6, 7],
+  "sections": [
+    {
+      "heading": "Le format en un coup d'œil",
+      "blocks": [
+        { "type": "p", "text": "Le TOEIC Listening & Reading est un QCM de **200 questions** en **2 heures** environ, entièrement en anglais. Il n'y a pas de pénalité pour une mauvaise réponse : **ne laissez jamais une case vide**." },
+        {
+          "type": "table",
+          "caption": "Structure de l'épreuve",
+          "head": ["Section", "Partie", "Type de question", "Nb"],
+          "rows": [
+            ["Listening (≈ 45 min)", "1", "Photographies : choisir la phrase qui décrit l'image", "6"],
+            ["", "2", "Questions-réponses : choisir la réponse logique", "25"],
+            ["", "3", "Conversations courtes (2 ou 3 personnes)", "39"],
+            ["", "4", "Monologues (annonces, messages, discours)", "30"],
+            ["Reading (75 min)", "5", "Phrases à compléter (grammaire, vocabulaire)", "30"],
+            ["", "6", "Textes à compléter (mots et phrases)", "16"],
+            ["", "7", "Compréhension écrite (un ou plusieurs documents)", "54"]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Le barème",
+      "blocks": [
+        { "type": "p", "text": "Chaque section est notée de **5 à 495** ; le score total va de **10 à 990**. Le score n'est pas un simple pourcentage : il est converti à partir du nombre de bonnes réponses." },
+        {
+          "type": "list",
+          "items": [
+            "Autour de **785** : niveau souvent associé au B2 et fréquemment demandé pour valider un diplôme d'ingénieur ou une école de commerce.",
+            "Autour de **945** : niveau souvent associé au C1.",
+            "Vérifiez toujours le seuil exigé par votre école ou votre employeur : il varie."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Gérer son temps",
+      "blocks": [
+        { "type": "p", "text": "En Listening, le rythme est imposé par l'audio. En Reading, c'est vous qui gérez les 75 minutes : c'est là que la plupart des candidats perdent des points." },
+        {
+          "type": "table",
+          "head": ["Partie", "Temps conseillé", "Repère"],
+          "rows": [
+            ["Partie 5", "≈ 10 min", "≈ 20 secondes par question"],
+            ["Partie 6", "≈ 8 min", "≈ 2 minutes par texte"],
+            ["Partie 7", "≈ 55 min", "≈ 1 minute par question"]
+          ]
+        },
+        { "type": "tip", "text": "Si une question de la partie 5 vous bloque plus de 30 secondes, répondez au hasard, notez son numéro et passez. La partie 7 rapporte autant de points par question et demande du temps." }
+      ]
+    },
+    {
+      "heading": "Méthode de révision",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "Passez un test blanc complet pour connaître votre point de départ.",
+            "Travaillez d'abord la grammaire de la partie 5 : c'est le gain le plus rapide.",
+            "Écoutez de l'anglais tous les jours (podcasts, vidéos) 15 à 20 minutes.",
+            "Lisez des documents professionnels courts : e-mails, annonces, factures.",
+            "Refaites un test blanc toutes les deux à trois semaines, en conditions réelles."
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Combien de questions compte le TOEIC Listening & Reading ?",
+      "choices": ["100", "150", "200", "250"],
+      "answer": 2,
+      "explanation": "100 questions en Listening et 100 en Reading, soit **200** au total."
+    },
+    {
+      "q": "Que faut-il faire si l'on ne connaît pas la réponse ?",
+      "choices": ["Laisser vide pour éviter une pénalité", "Répondre quand même", "Cocher deux réponses", "Revenir à la question en Listening plus tard"],
+      "answer": 1,
+      "explanation": "Les mauvaises réponses ne sont **pas pénalisées** : une réponse au hasard a une chance sur quatre (ou trois en partie 2) d'être juste."
+    },
+    {
+      "q": "Quelle partie compte le plus de questions ?",
+      "choices": ["Partie 2", "Partie 3", "Partie 5", "Partie 7"],
+      "answer": 3,
+      "explanation": "La partie 7 (compréhension écrite) compte **54 questions**."
+    },
+    {
+      "q": "Combien de temps dure la section Reading ?",
+      "choices": ["45 minutes", "60 minutes", "75 minutes", "90 minutes"],
+      "answer": 2,
+      "explanation": "La section Reading dure **75 minutes** pour 100 questions."
+    },
+    {
+      "q": "Dans la partie 2, combien de propositions de réponse entend-on ?",
+      "choices": ["2", "3", "4", "5"],
+      "answer": 1,
+      "explanation": "La partie 2 propose **3 réponses** (A, B, C), contre 4 dans les autres parties."
+    }
+  ]
+}

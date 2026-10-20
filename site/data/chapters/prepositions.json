@@ -1,0 +1,115 @@
+{
+  "id": "prepositions",
+  "title": "Les prépositions",
+  "category": "Grammaire",
+  "summary": "In, on, at, by, until, during, while… et les combinaisons verbe + préposition fréquentes.",
+  "toeicParts": [5, 6],
+  "sections": [
+    {
+      "heading": "Temps : in, on, at",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Préposition", "Emploi", "Exemples"],
+          "rows": [
+            ["**at**", "heure précise, moment ponctuel", "at 9 a.m., at noon, at the end of the day"],
+            ["**on**", "jour, date", "on Monday, on May 3, on the first day"],
+            ["**in**", "mois, année, saison, période", "in June, in 2025, in the morning, in two weeks"]
+          ]
+        },
+        { "type": "tip", "text": "**in two weeks** = dans deux semaines (à partir de maintenant) ; **within two weeks** = en moins de deux semaines, au plus tard." }
+      ]
+    },
+    {
+      "heading": "By, until, during, while, for",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**by** + échéance : au plus tard à (Submit it **by** Friday).",
+            "**until** / **till** + durée jusqu'à un moment : sans interruption jusqu'à (The store is open **until** 8 p.m.).",
+            "**during** + nom : pendant (**during** the meeting).",
+            "**while** + proposition (sujet + verbe) : pendant que (**while** I was waiting).",
+            "**for** + durée : pendant (**for** three hours)."
+          ]
+        },
+        { "type": "warning", "text": "**during** est suivi d'un **nom**, **while** d'une **proposition**. « during the presentation » mais « while she was presenting »." }
+      ]
+    },
+    {
+      "heading": "Lieu et mouvement",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**at** : point précis (at the reception desk, at the airport).",
+            "**in** : intérieur d'un espace (in the office, in Paris).",
+            "**on** : surface, étage, rue (on the table, on the third floor, on Main Street).",
+            "**across from** / **opposite** : en face de ; **next to** / **beside** : à côté de ; **among** : parmi (plus de deux) ; **between** : entre (deux)."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Verbes et adjectifs + préposition",
+      "blocks": [
+        { "type": "p", "text": "Le TOEIC teste beaucoup de combinaisons figées. À apprendre par cœur :" },
+        {
+          "type": "table",
+          "head": ["Expression", "Sens"],
+          "rows": [
+            ["comply **with**", "se conformer à"],
+            ["be responsible **for**", "être responsable de"],
+            ["depend **on**", "dépendre de"],
+            ["apply **for** (a job) / apply **to** (a company)", "postuler à un poste / auprès d'une entreprise"],
+            ["be eligible **for**", "avoir droit à"],
+            ["be familiar **with**", "connaître, être habitué à"],
+            ["in charge **of**", "chargé de"],
+            ["look forward **to** + V-ing", "avoir hâte de"],
+            ["according **to**", "selon"],
+            ["in accordance **with**", "conformément à"]
+          ]
+        },
+        { "type": "warning", "text": "Dans **look forward to**, « to » est une préposition : on dit « I look forward to **hearing** from you », jamais « to hear »." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "All expense reports must be submitted ______ Friday at noon.",
+      "choices": ["until", "by", "during", "since"],
+      "answer": 1,
+      "explanation": "Une échéance (au plus tard) → **by**."
+    },
+    {
+      "q": "Mobile phones must be switched off ______ the presentation.",
+      "choices": ["while", "during", "for", "at"],
+      "answer": 1,
+      "explanation": "Suivi d'un nom (the presentation) → **during**. « while » exige une proposition."
+    },
+    {
+      "q": "The conference will take place ______ March 14.",
+      "choices": ["in", "at", "on", "by"],
+      "answer": 2,
+      "explanation": "Devant une date précise → **on**."
+    },
+    {
+      "q": "All staff must comply ______ the new safety regulations.",
+      "choices": ["to", "with", "for", "on"],
+      "answer": 1,
+      "explanation": "Expression figée : **comply with**."
+    },
+    {
+      "q": "We look forward to ______ with you on this project.",
+      "choices": ["work", "worked", "working", "be working"],
+      "answer": 2,
+      "explanation": "Dans **look forward to**, « to » est une préposition → verbe en **-ing**."
+    },
+    {
+      "q": "The library will remain open ______ 9 p.m. during the exam period.",
+      "choices": ["by", "until", "within", "since"],
+      "answer": 1,
+      "explanation": "Situation qui dure jusqu'à un moment → **until**."
+    }
+  ]
+}

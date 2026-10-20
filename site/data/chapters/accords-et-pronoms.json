@@ -1,0 +1,104 @@
+{
+  "id": "accords-et-pronoms",
+  "title": "Accords, quantifieurs et pronoms",
+  "category": "Grammaire",
+  "summary": "Accord sujet-verbe, much ou many, few ou little, pronoms réfléchis et possessifs.",
+  "toeicParts": [5, 6],
+  "sections": [
+    {
+      "heading": "Accord sujet-verbe",
+      "blocks": [
+        { "type": "p", "text": "Trouvez le **vrai sujet** du verbe, en ignorant ce qui se trouve entre les deux (compléments, relatives)." },
+        { "type": "example", "en": "The list of approved suppliers **is** updated every month.", "fr": "Le sujet est « The list » (singulier), pas « suppliers »." },
+        {
+          "type": "list",
+          "items": [
+            "**each, every, everyone, nobody, either, neither** + verbe au singulier.",
+            "**the number of** + pluriel → verbe au **singulier** ; **a number of** (plusieurs) → verbe au **pluriel**.",
+            "Noms indénombrables toujours au singulier : **information, equipment, advice, furniture, luggage, feedback**."
+          ]
+        },
+        { "type": "warning", "text": "On ne dit pas « informations » ni « equipments ». Pour compter : **a piece of** information, **an item of** equipment." }
+      ]
+    },
+    {
+      "heading": "Les quantifieurs",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Avec dénombrable pluriel", "Avec indénombrable", "Sens"],
+          "rows": [
+            ["many", "much", "beaucoup"],
+            ["a few", "a little", "quelques, un peu (sens positif)"],
+            ["few", "little", "peu (sens négatif)"],
+            ["fewer", "less", "moins de"],
+            ["a number of", "an amount of", "un certain nombre / une certaine quantité"]
+          ]
+        },
+        { "type": "p", "text": "**each / every** + nom **singulier** ; **all / most / several / both** + nom **pluriel** ; **another** + singulier ; **other** + pluriel." }
+      ]
+    },
+    {
+      "heading": "Pronoms",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Sujet", "Complément", "Adjectif possessif", "Pronom possessif", "Réfléchi"],
+          "rows": [
+            ["I", "me", "my", "mine", "myself"],
+            ["you", "you", "your", "yours", "yourself"],
+            ["he / she / it", "him / her / it", "his / her / its", "his / hers", "himself / herself / itself"],
+            ["we", "us", "our", "ours", "ourselves"],
+            ["they", "them", "their", "theirs", "themselves"]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Réfléchi : quand le sujet et le complément sont la même personne, ou pour insister (« The CEO **herself** answered »).",
+            "**by + réfléchi** = seul, sans aide : « She completed the audit **by herself** ».",
+            "**its** (possessif) ≠ **it's** (it is)."
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "The results of the customer survey ______ very encouraging.",
+      "choices": ["was", "is", "were", "has been"],
+      "answer": 2,
+      "explanation": "Le sujet est « The results » (pluriel) → **were**."
+    },
+    {
+      "q": "We received ______ useful feedback from the participants.",
+      "choices": ["many", "a few", "much", "several"],
+      "answer": 2,
+      "explanation": "**feedback** est indénombrable → much."
+    },
+    {
+      "q": "Each employee ______ required to attend the safety training.",
+      "choices": ["are", "is", "were", "have been"],
+      "answer": 1,
+      "explanation": "**Each** + singulier → is."
+    },
+    {
+      "q": "Mr. Lopez prefers to prepare the slides by ______.",
+      "choices": ["him", "his", "himself", "he"],
+      "answer": 2,
+      "explanation": "**by + réfléchi** = seul : by himself."
+    },
+    {
+      "q": "This year, the company received ______ complaints than last year.",
+      "choices": ["less", "fewer", "little", "much"],
+      "answer": 1,
+      "explanation": "« complaints » est dénombrable pluriel → **fewer**."
+    },
+    {
+      "q": "The number of applicants ______ increased significantly this year.",
+      "choices": ["have", "has", "are", "were"],
+      "answer": 1,
+      "explanation": "**The number of** → verbe au singulier : has."
+    }
+  ]
+}

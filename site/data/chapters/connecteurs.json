@@ -1,0 +1,89 @@
+{
+  "id": "connecteurs",
+  "title": "Les connecteurs logiques",
+  "category": "Grammaire",
+  "summary": "Although ou despite ? However ou but ? Relier les idées, clé des parties 5 et 6.",
+  "toeicParts": [5, 6, 7],
+  "sections": [
+    {
+      "heading": "Conjonction, préposition ou adverbe",
+      "blocks": [
+        { "type": "p", "text": "Le piège classique : plusieurs mots ont le même sens mais pas la même grammaire. Regardez **ce qui suit le blanc**." },
+        {
+          "type": "table",
+          "head": ["Sens", "+ proposition (sujet + verbe)", "+ nom / V-ing", "Adverbe (entre deux phrases)"],
+          "rows": [
+            ["opposition", "although, even though, though, whereas, while", "despite, in spite of", "however, nevertheless, nonetheless"],
+            ["cause", "because, since, as", "because of, due to, owing to", "—"],
+            ["conséquence", "so (that)", "—", "therefore, consequently, as a result, thus"],
+            ["ajout", "—", "in addition to, besides", "moreover, furthermore, in addition, also"],
+            ["but", "so that, in order that", "in order to + verbe, for + nom", "—"]
+          ]
+        },
+        { "type": "example", "en": "**Although** sales increased, profits fell.", "fr": "Bien que les ventes aient augmenté, les bénéfices ont baissé." },
+        { "type": "example", "en": "**Despite** the increase in sales, profits fell.", "fr": "Malgré la hausse des ventes, les bénéfices ont baissé." },
+        { "type": "example", "en": "Sales increased. **However**, profits fell.", "fr": "Les ventes ont augmenté. Cependant, les bénéfices ont baissé." }
+      ]
+    },
+    {
+      "heading": "Les paires corrélatives",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**both** A **and** B",
+            "**either** A **or** B",
+            "**neither** A **nor** B",
+            "**not only** A **but (also)** B",
+            "**whether** A **or** B (or not)"
+          ]
+        },
+        { "type": "tip", "text": "Si vous voyez **neither** dans la phrase, cherchez **nor** dans les propositions, et inversement. Ce sont des points faciles." }
+      ]
+    },
+    {
+      "heading": "Partie 6 : la logique entre les phrases",
+      "blocks": [
+        { "type": "p", "text": "En partie 6, un blanc en début de phrase attend souvent un adverbe de liaison. Lisez la phrase **précédente** et la phrase **suivante**, puis déterminez la relation : opposition, conséquence, ajout ou chronologie (**first, then, afterward, finally, meanwhile**)." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "______ the heavy traffic, the delivery arrived on time.",
+      "choices": ["Although", "Despite", "However", "Because"],
+      "answer": 1,
+      "explanation": "Suivi d'un groupe nominal (the heavy traffic) + sens d'opposition → **Despite**."
+    },
+    {
+      "q": "The flight was delayed ______ a technical problem.",
+      "choices": ["because", "due to", "since", "therefore"],
+      "answer": 1,
+      "explanation": "Cause + nom → **due to** (because exigerait une proposition)."
+    },
+    {
+      "q": "The project is over budget. ______, the deadline has been extended.",
+      "choices": ["Despite", "Although", "Moreover", "Because of"],
+      "answer": 2,
+      "explanation": "Entre deux phrases, ajout d'un problème supplémentaire → **Moreover** (adverbe)."
+    },
+    {
+      "q": "Neither the manager ______ her assistant attended the meeting.",
+      "choices": ["or", "and", "nor", "but"],
+      "answer": 2,
+      "explanation": "Paire corrélative : **neither … nor**."
+    },
+    {
+      "q": "______ the new system is faster, some employees prefer the old one.",
+      "choices": ["In spite of", "Even though", "Nevertheless", "Due to"],
+      "answer": 1,
+      "explanation": "Opposition + proposition complète (the new system is faster) → **Even though**."
+    },
+    {
+      "q": "Demand rose sharply last quarter. ______, the factory hired 50 new workers.",
+      "choices": ["Consequently", "Although", "Unless", "Whereas"],
+      "answer": 0,
+      "explanation": "Relation de conséquence entre deux phrases → **Consequently**."
+    }
+  ]
+}
