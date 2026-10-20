@@ -1,0 +1,98 @@
+{
+  "id": "reunions-et-appels",
+  "title": "Réunions et appels",
+  "category": "Anglais des affaires",
+  "summary": "Animer, intervenir, être d'accord ou non, clarifier, et conclure avec des actions claires.",
+  "toeicParts": [2, 3, 4],
+  "sections": [
+    {
+      "heading": "Ouvrir et animer une réunion",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Let's get started. / Shall we begin?",
+            "The purpose of today's meeting is to…",
+            "We have three items on the **agenda**.",
+            "Let's move on to the next point.",
+            "We're running out of time, so let's **wrap up**.",
+            "Let's **take this offline**. (= on en reparle en dehors de la réunion)"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Donner son avis avec nuance",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Intention", "Expressions"],
+          "rows": [
+            ["Donner son avis", "In my view,… · From my perspective,… · I'd say that…"],
+            ["Être d'accord", "I couldn't agree more. · That's a good point. · Exactly."],
+            ["Accord partiel", "I see your point, but… · That's true to some extent; however,…"],
+            ["Désaccord poli", "I'm not sure I agree. · I see it slightly differently. · I'm afraid I can't agree with that."],
+            ["Interrompre", "Sorry to interrupt, but… · Could I just add something?"],
+            ["Reprendre la parole", "As I was saying,… · If I could just finish my point,…"]
+          ]
+        },
+        { "type": "tip", "label": "Astuce pro", "text": "Un « No, you're wrong » direct est perçu comme agressif dans la plupart des entreprises anglophones. Préférez « I see it differently, because… »." }
+      ]
+    },
+    {
+      "heading": "Visioconférences et appels",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "You're **on mute**. / I think you're **breaking up**. (la connexion coupe)",
+            "Could you **repeat** that, please? / Sorry, I didn't **catch** that.",
+            "Can everyone see my screen?",
+            "I'll **put you through** to the sales department. (au téléphone : transférer)",
+            "Could you **hold on** a moment? / Could I **leave a message**?",
+            "I'll **get back to you** by the end of the day."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Conclure avec des actions",
+      "blocks": [
+        { "type": "p", "text": "Une bonne réunion se termine par des **action items** : qui fait quoi, pour quand. Le compte rendu s'appelle les **minutes**." },
+        { "type": "example", "en": "So, to **sum up**: Priya will send the revised quote by Thursday, and Mark will **follow up** with the supplier.", "fr": "Pour résumer : Priya enverra le devis révisé d'ici jeudi et Mark relancera le fournisseur." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Pendant un appel, votre collègue parle mais personne ne l'entend. Vous dites :",
+      "choices": ["You're muted off.", "You're on mute.", "You're in silence.", "You're closed."],
+      "answer": 1,
+      "explanation": "L'expression consacrée est **You're on mute**."
+    },
+    {
+      "q": "Quelle formule exprime un désaccord poli ?",
+      "choices": ["That's wrong.", "No way.", "I see it slightly differently.", "You don't understand."],
+      "answer": 2,
+      "explanation": "**I see it slightly differently** marque le désaccord sans être agressif."
+    },
+    {
+      "q": "« Let's take this offline » signifie :",
+      "choices": ["Coupons Internet.", "Parlons-en en dehors de cette réunion.", "Mettons cela par écrit.", "Annulons ce point."],
+      "answer": 1,
+      "explanation": "On reporte la discussion à un échange séparé, pour ne pas bloquer la réunion."
+    },
+    {
+      "q": "Sorry, I didn't ______ that. Could you say it again?",
+      "choices": ["take", "catch", "get on", "hold"],
+      "answer": 1,
+      "explanation": "**I didn't catch that** = je n'ai pas saisi ce que vous avez dit."
+    },
+    {
+      "q": "Le compte rendu d'une réunion s'appelle :",
+      "choices": ["the agenda", "the minutes", "the report card", "the summary sheet"],
+      "answer": 1,
+      "explanation": "**Minutes** = compte rendu. L'**agenda** est l'ordre du jour, préparé avant."
+    }
+  ]
+}

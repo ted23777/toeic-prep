@@ -1,0 +1,97 @@
+{
+  "id": "finance-budget-et-reporting",
+  "title": "Finance : budget, prévisions et reporting",
+  "category": "Métier : Finance",
+  "summary": "Budget, forecast, écarts, CAPEX/OPEX, trésorerie : commenter la performance face au plan.",
+  "toeicParts": [],
+  "sections": [
+    {
+      "heading": "Budget et prévisions",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["budget / to draw up a budget", "budget / établir un budget"],
+            ["forecast / to forecast", "prévision / prévoir"],
+            ["actuals", "réalisé (chiffres réels)"],
+            ["variance", "écart (réalisé vs budget)"],
+            ["budget overrun / to exceed the budget", "dépassement / dépasser le budget"],
+            ["CAPEX (capital expenditure)", "dépenses d'investissement"],
+            ["OPEX (operating expenditure)", "dépenses de fonctionnement"],
+            ["headcount", "effectifs"],
+            ["cost cutting / cost savings", "réduction des coûts / économies"],
+            ["break-even point", "seuil de rentabilité"]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Commenter les écarts",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Revenue came in **above / below** budget.",
+            "We **exceeded** our target **by** €200k. / We **fell short of** our target **by** 4%.",
+            "The **unfavourable** variance on travel costs **is due to** the new client project.",
+            "**Year-on-year** (YoY), costs **were up / down** 3%.",
+            "**Year to date** (YTD), we are **in line with** the forecast."
+          ]
+        },
+        { "type": "tip", "label": "Astuce pro", "text": "**favourable / unfavourable variance** (UK) ou **favorable / unfavorable** (US) : un écart favorable améliore le résultat (plus de revenus ou moins de coûts)." }
+      ]
+    },
+    {
+      "heading": "Trésorerie et financement",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["cash flow / cash position", "flux de trésorerie / situation de trésorerie"],
+            ["working capital", "besoin en fonds de roulement (au sens large)"],
+            ["payment terms", "conditions / délais de paiement"],
+            ["overdue invoice", "facture en retard de paiement"],
+            ["loan / interest rate", "prêt / taux d'intérêt"],
+            ["shareholder / dividend", "actionnaire / dividende"],
+            ["to write off", "passer en perte"]
+          ]
+        },
+        { "type": "example", "en": "Payment terms are 30 days **from** the invoice date. Any **overdue** amount will **incur** late fees.", "fr": "Le paiement est dû à 30 jours date de facture. Tout montant en retard entraînera des pénalités." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "The difference between the budget and the actual figures is the:",
+      "choices": ["forecast", "variance", "headcount", "break-even"],
+      "answer": 1,
+      "explanation": "**Variance** = écart entre réalisé et budget."
+    },
+    {
+      "q": "We ______ our sales target by 5%, so no bonuses will be paid this quarter.",
+      "choices": ["exceeded", "fell short of", "were in line with", "broke even"],
+      "answer": 1,
+      "explanation": "Pas de bonus → objectif manqué : **fell short of**."
+    },
+    {
+      "q": "Buying a new production machine is classified as:",
+      "choices": ["OPEX", "CAPEX", "COGS", "EPS"],
+      "answer": 1,
+      "explanation": "Un investissement durable → **CAPEX**."
+    },
+    {
+      "q": "The number of employees in a department is its:",
+      "choices": ["headcount", "workforce cost", "payroll tax", "staff turnover"],
+      "answer": 0,
+      "explanation": "**Headcount** = effectifs."
+    },
+    {
+      "q": "The point at which revenue equals total costs is the:",
+      "choices": ["bottom line", "break-even point", "cash position", "write-off"],
+      "answer": 1,
+      "explanation": "**Break-even point** = seuil de rentabilité."
+    }
+  ]
+}

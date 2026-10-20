@@ -1,0 +1,96 @@
+{
+  "id": "marketing-strategie",
+  "title": "Marketing : stratégie et marque",
+  "category": "Métier : Marketing",
+  "summary": "Cible, positionnement, marque, lancement de produit et analyse concurrentielle.",
+  "toeicParts": [],
+  "sections": [
+    {
+      "heading": "Marché et cible",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["target audience / target market", "cible / marché cible"],
+            ["segmentation / segment", "segmentation / segment"],
+            ["buyer persona", "profil type d'acheteur"],
+            ["market share", "part de marché"],
+            ["competitor / competitive landscape", "concurrent / paysage concurrentiel"],
+            ["market research / survey", "étude de marché / enquête"],
+            ["focus group", "groupe de discussion"],
+            ["B2B / B2C", "entreprise à entreprise / entreprise à consommateur"]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Marque et positionnement",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["brand awareness", "notoriété de la marque"],
+            ["brand identity / image", "identité / image de marque"],
+            ["positioning", "positionnement"],
+            ["unique selling proposition (USP)", "proposition de valeur unique, avantage distinctif"],
+            ["value proposition", "proposition de valeur"],
+            ["tagline / slogan", "signature / slogan"],
+            ["word of mouth", "bouche-à-oreille"],
+            ["customer loyalty", "fidélité client"]
+          ]
+        },
+        { "type": "example", "en": "Our **USP** is that we are the only supplier **offering** same-day delivery across Europe.", "fr": "Notre avantage distinctif : nous sommes le seul fournisseur à proposer la livraison le jour même dans toute l'Europe." }
+      ]
+    },
+    {
+      "heading": "Lancer un produit",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "to **launch** a product / a product **launch**",
+            "to **roll out** a campaign (déployer progressivement)",
+            "**go-to-market** strategy (stratégie de mise sur le marché)",
+            "**pricing** strategy : premium, competitive, penetration pricing",
+            "**the 4 Ps** : product, price, place (distribution), promotion"
+          ]
+        },
+        { "type": "warning", "label": "Erreur fréquente", "text": "**publicity** = la médiatisation (souvent gratuite) ; la publicité payante se dit **advertising** (indénombrable) ou **an ad / an advertisement**." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "The campaign aims to increase brand ______ among young professionals.",
+      "choices": ["awareness", "aware", "awarely", "awaring"],
+      "answer": 0,
+      "explanation": "Collocation : **brand awareness** (notoriété)."
+    },
+    {
+      "q": "The percentage of total sales in a market held by one company is its:",
+      "choices": ["market research", "market share", "target market", "value proposition"],
+      "answer": 1,
+      "explanation": "**Market share** = part de marché."
+    },
+    {
+      "q": "« La publicité à la télévision » se traduit par :",
+      "choices": ["TV publicity", "TV advertising", "TV advertisings", "TV advices"],
+      "answer": 1,
+      "explanation": "**advertising** (indénombrable) pour la publicité payante."
+    },
+    {
+      "q": "What makes a product different from all competitors is its:",
+      "choices": ["USP", "KPI", "SLA", "ROI"],
+      "answer": 0,
+      "explanation": "**USP** = unique selling proposition."
+    },
+    {
+      "q": "Customers recommending a product to friends is called:",
+      "choices": ["word of mouth", "focus group", "market survey", "tagline"],
+      "answer": 0,
+      "explanation": "**Word of mouth** = bouche-à-oreille."
+    }
+  ]
+}

@@ -12,7 +12,7 @@ import { fileURLToPath } from 'node:url';
 import path from 'node:path';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..', 'site');
-const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+const ID_PATTERN = /^[a-z0-9][a-z0-9-]{0,63}$/;
 const HTML_TAG = /<\/?[a-z!][^>]*>/i;
 const BLOCK_TYPES = new Set(['p', 'list', 'example', 'tip', 'warning', 'table']);
 
@@ -65,6 +65,10 @@ for (const entry of index.chapters) {
         const label = `sections[${si}].blocks[${bi}]`;
         assert.ok(BLOCK_TYPES.has(block.type), `${label} : type inconnu « ${block.type} »`);
         if (['p', 'tip', 'warning'].includes(block.type)) assertNonEmptyString(block.text, `${label}.text`);
+        if ('label' in block) {
+          assert.ok(['tip', 'warning'].includes(block.type), `${label} : label réservé aux encadrés`);
+          assertNonEmptyString(block.label, `${label}.label`);
+        }
         if (block.type === 'example') assertNonEmptyString(block.en, `${label}.en`);
         if (block.type === 'list') assert.ok(block.items.length > 0, `${label} : liste vide`);
         if (block.type === 'table') {
@@ -90,6 +94,40 @@ for (const entry of index.chapters) {
   });
 }
 
+test('parcours : structure et références valides', async () => {
+  const data = await readJSON('data/tracks.json');
+  const chapterIds = new Set(index.chapters.map((c) => c.id));
+  assertNonEmptyString(data.weeklyEffort, 'weeklyEffort');
+  assert.ok(data.tracks.length > 0, 'au moins un parcours');
+  const ids = data.tracks.map((t) => t.id);
+  assert.equal(new Set(ids).size, ids.length, 'identifiants de parcours dupliqués');
+
+  for (const track of data.tracks) {
+    assert.match(track.id, ID_PATTERN);
+    for (const key of ['title', 'audience', 'summary', 'outcome']) assertNonEmptyString(track[key], `${track.id}.${key}`);
+    assert.ok(track.steps.length > 0, `${track.id} : aucune étape`);
+    let lastWeek = 0;
+    const seen = new Set();
+    for (const step of track.steps) {
+      assert.ok(chapterIds.has(step.chapter), `${track.id} : chapitre inconnu « ${step.chapter} »`);
+      assert.ok(!seen.has(step.chapter), `${track.id} : « ${step.chapter} » apparaît deux fois`);
+      seen.add(step.chapter);
+      assert.ok(Number.isInteger(step.week) && step.week >= lastWeek, `${track.id} : semaines non ordonnées`);
+      lastWeek = step.week;
+      assertNonEmptyString(step.why, `${track.id}/${step.chapter}.why`);
+    }
+  }
+  for (const [text, where] of strings(data)) assert.doesNotMatch(text, HTML_TAG, `HTML interdit dans ${where}`);
+});
+
+test('chaque chapitre métier figure dans au moins un parcours', async () => {
+  const data = await readJSON('data/tracks.json');
+  const used = new Set(data.tracks.flatMap((t) => t.steps.map((s) => s.chapter)));
+  for (const c of index.chapters.filter((c) => c.category.startsWith('Métier'))) {
+    assert.ok(used.has(c.id), `${c.id} n'est dans aucun parcours`);
+  }
+});
+
 test('index.html : CSP stricte, aucun script inline ni ressource externe', async () => {
   const html = await readFile(path.join(root, 'index.html'), 'utf8');
   assert.match(html, /http-equiv="Content-Security-Policy"/);
@@ -98,7 +136,8 @@ test('index.html : CSP stricte, aucun script inline ni ressource externe', async
   assert.doesNotMatch(html, /<script(?![^>]*\bsrc=)[^>]*>/i, 'script inline interdit');
   assert.doesNotMatch(html, /<style/i, 'style inline interdit');
   assert.doesNotMatch(html, /\sstyle="/i, 'attribut style interdit');
-  assert.doesNotMatch(html, /(src|href)="(https?:)?\/\//i, 'ressource externe interdite');
+  assert.doesNotMatch(html, /(?:src|href)="https?:/i, 'ressource externe interdite');
+  assert.doesNotMatch(html, /(?:src|href)="\/\//i, 'ressource externe interdite (URL relative au protocole)');
 });
 
 test('JavaScript : aucune API d\'injection HTML ni de stockage', async () => {

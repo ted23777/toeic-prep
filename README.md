@@ -1,7 +1,8 @@
 # TOEIC Prep
 
-Application web de révision du **TOEIC Listening & Reading** : des fiches de cours
-par chapitre, chacune suivie d'un quiz corrigé, et un mode d'entraînement aléatoire.
+Application web de révision du **TOEIC Listening & Reading** et de l'**anglais des affaires** :
+23 fiches de cours avec quiz corrigé, 4 **parcours métier** de 6 semaines (IT & Data, Marketing,
+Finance, Audit & Conformité) et un mode d'entraînement aléatoire, global ou par parcours.
 
 - **Aucun compte**, aucun cookie, aucun stockage local, aucun traceur.
 - **Aucune dépendance à l'exécution** : HTML, CSS et JavaScript natifs (modules ES).
@@ -20,6 +21,7 @@ site/                    ← seul dossier publié
 │       └── quiz.js      ← quiz à choix unique, sans persistance
 └── data/
     ├── index.json       ← liste ordonnée des chapitres
+    ├── tracks.json      ← parcours métier (étapes par semaine)
     └── chapters/*.json  ← contenu de chaque chapitre
 tests/content.test.mjs   ← validation du contenu et des règles de sécurité
 .github/workflows/       ← CI (lint + tests + audit) et déploiement Pages
@@ -62,13 +64,22 @@ Blocs disponibles dans une section :
 | `p` | `text` | paragraphe |
 | `list` | `items`, `ordered?` | liste à puces ou numérotée |
 | `example` | `en`, `fr?` | exemple anglais + traduction |
-| `tip` | `text` | encadré « Astuce TOEIC » |
-| `warning` | `text` | encadré « Piège » |
+| `tip` | `text`, `label?` | encadré « Astuce TOEIC » (ou le libellé fourni) |
+| `warning` | `text`, `label?` | encadré « Piège » (ou le libellé fourni) |
 | `table` | `head`, `rows`, `caption?` | tableau |
 
 Questions de quiz : `{ "q", "choices": [...], "answer": <index à partir de 0>, "explanation" }`.
 
 Mise en forme : seul `**gras**` est interprété. Le HTML est refusé par les tests.
+
+## Ajouter ou modifier un parcours
+
+Dans `site/data/tracks.json`, chaque parcours a un `id`, un `title`, une `audience`, un `summary`,
+un `outcome` et des `steps` : `{ "week": 1, "chapter": "<id du chapitre>", "why": "…" }`.
+Les tests vérifient que chaque chapitre cité existe, que les semaines sont dans l'ordre et que
+chaque chapitre « Métier » appartient à au moins un parcours.
+
+URL utiles : `#/parcours`, `#/parcours/<id>`, `#/entrainement/<id>` (questions du parcours).
 
 ## Sécurité
 

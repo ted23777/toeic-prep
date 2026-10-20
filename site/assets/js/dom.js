@@ -6,6 +6,10 @@
  * nœuds texte, ce qui rend l'injection de balises impossible.
  */
 
+/** Attributs porteurs d'URL, et préfixes acceptés : ancre, chemin relatif ou https. */
+const URL_ATTRIBUTES = new Set(['href', 'src', 'action', 'formaction', 'xlink:href']);
+const SAFE_URL = /^(?:#|\.{0,2}\/|https:\/\/)/i;
+
 /**
  * Crée un élément.
  * @param {string} tag
@@ -25,6 +29,12 @@ export function h(tag, props = {}, ...children) {
       }
     } else if (key.startsWith('on')) {
       throw new Error(`Utilisez la propriété "on" pour les écouteurs (${key}).`);
+    } else if (key === 'style') {
+      throw new Error('Attribut style interdit : utiliser une classe CSS.');
+    } else if (URL_ATTRIBUTES.has(key) && !SAFE_URL.test(String(value))) {
+      // Défense en profondeur (la CSP bloque déjà javascript:) : seules les ancres,
+      // chemins relatifs et URL https sont acceptés.
+      throw new Error(`URL refusée pour ${key} : ${value}`);
     } else if (value === true) {
       el.setAttribute(key, '');
     } else {

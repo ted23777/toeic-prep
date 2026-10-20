@@ -1,0 +1,102 @@
+{
+  "id": "it-production-et-donnees",
+  "title": "IT : production, incidents et données",
+  "category": "Métier : IT",
+  "summary": "Gérer un incident, rédiger un post-mortem, parler de pipelines de données et de tableaux de bord.",
+  "toeicParts": [],
+  "sections": [
+    {
+      "heading": "Incidents et support",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["outage / downtime", "panne / indisponibilité"],
+            ["uptime / availability", "disponibilité"],
+            ["to raise / log a ticket", "ouvrir un ticket"],
+            ["to escalate", "faire remonter (au niveau supérieur)"],
+            ["workaround", "solution de contournement"],
+            ["root cause", "cause racine"],
+            ["fix / patch / hotfix", "correctif / correctif urgent"],
+            ["to roll back", "revenir à la version précédente"],
+            ["SLA (service level agreement)", "engagement de niveau de service"],
+            ["on call", "d'astreinte"]
+          ]
+        },
+        { "type": "example", "en": "The payment service **went down** at 2:15 p.m. We **rolled back** the release and service **was restored** at 2:40 p.m.", "fr": "Le service de paiement est tombé à 14 h 15. Nous sommes revenus à la version précédente et le service a été rétabli à 14 h 40." }
+      ]
+    },
+    {
+      "heading": "Le post-mortem",
+      "blocks": [
+        { "type": "p", "text": "Un post-mortem décrit un incident de façon factuelle et **sans chercher de coupable** (blameless). Le **passif** y est très courant." },
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "**Summary** : what happened, impact, duration.",
+            "**Timeline** : 14:15 – Alert **was triggered**. 14:22 – Incident **was escalated** to the on-call engineer.",
+            "**Root cause** : A configuration change **was deployed** without being tested.",
+            "**Action items** : Add an automated check before each deployment."
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Données et BI",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["data pipeline", "chaîne de traitement de données"],
+            ["to ingest / to load", "ingérer / charger"],
+            ["dataset / data source", "jeu de données / source de données"],
+            ["data quality / data cleansing", "qualité des données / nettoyage"],
+            ["query / to run a query", "requête / exécuter une requête"],
+            ["dashboard / report", "tableau de bord / rapport"],
+            ["KPI (key performance indicator)", "indicateur clé de performance"],
+            ["to refresh", "actualiser"],
+            ["insight", "enseignement tiré des données"],
+            ["data-driven", "fondé sur les données"]
+          ]
+        },
+        { "type": "example", "en": "The dashboard **is refreshed** every night after the ETL job **has completed**.", "fr": "Le tableau de bord est actualisé chaque nuit une fois le traitement ETL terminé." },
+        { "type": "warning", "label": "Erreur fréquente", "text": "**data** est souvent traité comme indénombrable en anglais professionnel : « The data **is** up to date », « **much** data ». « data are » existe mais reste plus rare, surtout en contexte scientifique." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "We couldn't fix the bug immediately, so we applied a temporary ______.",
+      "choices": ["root cause", "workaround", "downtime", "uptime"],
+      "answer": 1,
+      "explanation": "**Workaround** = solution de contournement en attendant le correctif."
+    },
+    {
+      "q": "The new release caused errors, so the team decided to ______ to the previous version.",
+      "choices": ["roll back", "roll out", "log in", "set up"],
+      "answer": 0,
+      "explanation": "**Roll back** = revenir en arrière. **Roll out** = déployer."
+    },
+    {
+      "q": "In the post-mortem: « The incident ______ to the on-call engineer at 14:22. »",
+      "choices": ["escalated", "was escalated", "has escalate", "escalating"],
+      "answer": 1,
+      "explanation": "L'incident subit l'action → **passif** : was escalated."
+    },
+    {
+      "q": "Our SLA guarantees 99.9% ______.",
+      "choices": ["downtime", "outage", "uptime", "hotfix"],
+      "answer": 2,
+      "explanation": "**Uptime** = taux de disponibilité garanti."
+    },
+    {
+      "q": "Which sentence is most common in business English?",
+      "choices": ["The datas are ready.", "The data is ready.", "The data is readies.", "A data is ready."],
+      "answer": 1,
+      "explanation": "**data** sans -s, généralement avec un verbe au singulier en contexte professionnel."
+    }
+  ]
+}

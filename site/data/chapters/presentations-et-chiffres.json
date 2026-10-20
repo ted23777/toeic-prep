@@ -1,0 +1,98 @@
+{
+  "id": "presentations-et-chiffres",
+  "title": "Présenter et commenter des chiffres",
+  "category": "Anglais des affaires",
+  "summary": "Structurer une présentation, décrire une tendance, lire les nombres sans faux pas.",
+  "toeicParts": [4, 5, 7],
+  "sections": [
+    {
+      "heading": "Structurer une présentation",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Étape", "Expressions"],
+          "rows": [
+            ["Introduction", "Today I'd like to talk about… · I've divided my presentation into three parts."],
+            ["Transition", "Let's move on to… · This brings me to my next point."],
+            ["Montrer un visuel", "As you can see on this slide,… · This chart shows…"],
+            ["Insister", "What's really important here is… · I'd like to highlight…"],
+            ["Conclure", "To sum up,… · The key takeaway is…"],
+            ["Questions", "I'm happy to take any questions. · That's a great question."]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Décrire une tendance",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Sens", "Verbes", "Noms"],
+          "rows": [
+            ["Hausse", "rise, increase, grow, go up, climb, soar (forte)", "a rise, an increase, growth"],
+            ["Baisse", "fall, decrease, decline, drop, go down, plunge (forte)", "a fall, a decrease, a decline, a drop"],
+            ["Stabilité", "remain stable, level off, stabilize", "a plateau"],
+            ["Sommet / creux", "peak, reach a peak / hit a low", "a peak, a low"]
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            "Intensité : a **sharp** / **significant** / **slight** / **steady** increase → increased **sharply** / **significantly** / **slightly** / **steadily**.",
+            "**by** = l'écart : Sales rose **by** 5%.",
+            "**to** = le niveau atteint : Sales rose **to** €2 million.",
+            "**from … to** : Costs fell **from** €80k **to** €65k."
+          ]
+        },
+        { "type": "warning", "label": "Erreur fréquente", "text": "**rise** (intransitif : les ventes augmentent) ≠ **raise** (transitif : on augmente les prix). « We raised prices. Prices rose. »" }
+      ]
+    },
+    {
+      "heading": "Lire les nombres",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Le séparateur décimal est un **point** : 3.5 se lit « three point five ». La virgule sépare les milliers : 12,000.",
+            "**a billion** = un milliard ; **a trillion** = mille milliards.",
+            "Pas de -s quand le nombre est précisé : **three million** euros, mais **millions of** users.",
+            "**percent** vs **percentage point** : passer de 10 % à 12 %, c'est +2 percentage points, soit +20 percent.",
+            "**k** = mille (€50k) ; **M** ou **m** = million ; **bn** = milliard."
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Revenue rose ______ 8% last year, reaching €4.2 million.",
+      "choices": ["of", "by", "to", "at"],
+      "answer": 1,
+      "explanation": "L'écart (+8 %) se donne avec **by** ; le niveau atteint avec **to**."
+    },
+    {
+      "q": "The company decided to ______ its prices in January.",
+      "choices": ["rise", "raise", "arise", "rose"],
+      "answer": 1,
+      "explanation": "Action sur un objet (les prix) → **raise** (transitif)."
+    },
+    {
+      "q": "Comment écrit-on « deux milliards » en anglais ?",
+      "choices": ["two milliards", "two billions", "two billion", "two millions"],
+      "answer": 2,
+      "explanation": "**billion** = milliard, invariable après un nombre : two billion."
+    },
+    {
+      "q": "Le taux de churn passe de 5 % à 6 %. C'est une hausse de :",
+      "choices": ["1 percent", "1 percentage point", "6 percent", "10 percentage points"],
+      "answer": 1,
+      "explanation": "+1 **percentage point** (soit +20 % en relatif)."
+    },
+    {
+      "q": "Sales increased ______ in Q3, from €1.0M to €1.9M.",
+      "choices": ["slightly", "sharply", "steady", "slight"],
+      "answer": 1,
+      "explanation": "Presque un doublement → hausse forte : **sharply** (adverbe après le verbe)."
+    }
+  ]
+}

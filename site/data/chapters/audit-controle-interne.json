@@ -1,0 +1,99 @@
+{
+  "id": "audit-controle-interne",
+  "title": "Audit : contrôle interne et conformité",
+  "category": "Métier : Audit",
+  "summary": "Risques, contrôles, séparation des tâches, conformité réglementaire et recommandations.",
+  "toeicParts": [],
+  "sections": [
+    {
+      "heading": "Risques et contrôles",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["internal control", "contrôle interne"],
+            ["risk assessment / risk mapping", "évaluation des risques / cartographie des risques"],
+            ["key control", "contrôle clé"],
+            ["preventive / detective control", "contrôle préventif / détectif"],
+            ["segregation of duties (SoD)", "séparation des tâches"],
+            ["four-eyes principle", "principe des quatre yeux (double validation)"],
+            ["control deficiency", "déficience de contrôle"],
+            ["significant deficiency / material weakness", "déficience importante / faiblesse majeure"],
+            ["audit trail", "piste d'audit"],
+            ["access rights / user access review", "droits d'accès / revue des habilitations"]
+          ]
+        },
+        { "type": "example", "en": "The same employee **can both create** suppliers **and approve** payments, which **constitutes** a segregation of duties **conflict**.", "fr": "Le même salarié peut à la fois créer des fournisseurs et approuver des paiements : c'est un conflit de séparation des tâches." }
+      ]
+    },
+    {
+      "heading": "Conformité",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["compliance / to comply with", "conformité / se conformer à"],
+            ["regulation / regulator", "réglementation / autorité de contrôle"],
+            ["breach / non-compliance", "violation, manquement / non-conformité"],
+            ["anti-money laundering (AML)", "lutte contre le blanchiment"],
+            ["know your customer (KYC)", "connaissance client"],
+            ["GDPR", "RGPD"],
+            ["whistleblower", "lanceur d'alerte"],
+            ["fraud / bribery / conflict of interest", "fraude / corruption / conflit d'intérêts"]
+          ]
+        },
+        { "type": "p", "text": "Le modèle des **Three Lines** (IIA) répartit les rôles : 1re ligne = les opérationnels qui gèrent les risques ; 2e ligne = fonctions risques et conformité ; 3e ligne = **audit interne**, indépendant." }
+      ]
+    },
+    {
+      "heading": "Rédiger une recommandation",
+      "blocks": [
+        { "type": "p", "text": "Une recommandation est claire, actionnable et utilise des modaux de force adaptée :" },
+        {
+          "type": "list",
+          "items": [
+            "**must** / **is required to** : obligation réglementaire.",
+            "**should** : recommandation forte (la plus courante).",
+            "**could** / **may consider** : suggestion d'amélioration."
+          ]
+        },
+        { "type": "example", "en": "Management **should** implement a quarterly user access review **to ensure that** access rights **are** consistent with job responsibilities.", "fr": "La direction devrait mettre en place une revue trimestrielle des habilitations afin de s'assurer que les droits d'accès correspondent aux fonctions." },
+        { "type": "p", "text": "La réponse de l'entité s'appelle **management response** ; elle précise l'**action owner** (responsable) et la **due date** (échéance)." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Requiring two different people to create and approve a payment is an example of:",
+      "choices": ["segregation of duties", "material misstatement", "audit trail", "whistleblowing"],
+      "answer": 0,
+      "explanation": "**Segregation of duties** = séparation des tâches."
+    },
+    {
+      "q": "All employees must ______ the new anti-bribery policy.",
+      "choices": ["comply to", "comply with", "comply on", "comply for"],
+      "answer": 1,
+      "explanation": "Construction figée : **comply with**."
+    },
+    {
+      "q": "In the Three Lines Model, internal audit is the:",
+      "choices": ["first line", "second line", "third line", "external line"],
+      "answer": 2,
+      "explanation": "L'audit interne est la **troisième ligne**, indépendante des opérations."
+    },
+    {
+      "q": "Quel modal est le plus courant pour une recommandation d'audit ?",
+      "choices": ["might", "should", "would", "shall not"],
+      "answer": 1,
+      "explanation": "**should** exprime une recommandation ferme sans être une obligation légale."
+    },
+    {
+      "q": "A person who reports illegal practices inside an organization is a:",
+      "choices": ["regulator", "whistleblower", "stakeholder", "action owner"],
+      "answer": 1,
+      "explanation": "**Whistleblower** = lanceur d'alerte."
+    }
+  ]
+}

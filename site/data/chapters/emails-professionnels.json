@@ -1,0 +1,97 @@
+{
+  "id": "emails-professionnels",
+  "title": "Écrire des e-mails professionnels",
+  "category": "Anglais des affaires",
+  "summary": "Structure, formules d'ouverture et de clôture, registre, et les erreurs typiques des francophones.",
+  "toeicParts": [6, 7],
+  "sections": [
+    {
+      "heading": "La structure d'un e-mail efficace",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "**Subject line** : précis et actionnable. « Budget approval needed by Friday » plutôt que « Question ».",
+            "**Greeting** : Dear Ms. Martin, (formel) · Hi Tom, (neutre, très courant en interne).",
+            "**Opening** : la raison de l'e-mail dès la première phrase.",
+            "**Body** : une idée par paragraphe, phrases courtes.",
+            "**Call to action** : ce que vous attendez, et pour quand.",
+            "**Closing** : Best regards, · Kind regards, · Best, (informel)."
+          ]
+        },
+        { "type": "tip", "label": "Astuce pro", "text": "En anglais professionnel, on va droit au but. Les longues formules de politesse à la française paraissent lourdes, voire floues." }
+      ]
+    },
+    {
+      "heading": "Formules utiles",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Intention", "Formel", "Neutre"],
+          "rows": [
+            ["Donner la raison", "I am writing to inquire about…", "I'm reaching out about…"],
+            ["Faire suite", "Further to our conversation,…", "Following up on our call,…"],
+            ["Joindre un fichier", "Please find attached the report.", "I've attached the report."],
+            ["Demander", "I would be grateful if you could…", "Could you please…?"],
+            ["Relancer", "I would like to follow up on my e-mail of May 3.", "Just following up on this."],
+            ["S'excuser", "Please accept our apologies for the delay.", "Sorry for the delay."],
+            ["Conclure", "I look forward to hearing from you.", "Looking forward to your reply."],
+            ["Proposer de l'aide", "Should you have any questions, please do not hesitate to contact me.", "Let me know if you have any questions."]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Erreurs fréquentes des francophones",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["À éviter", "Correct", "Pourquoi"],
+          "rows": [
+            ["I join the file.", "I've **attached** the file.", "« join » = rejoindre."],
+            ["Can you precise the date?", "Can you **specify** / **confirm** the date?", "« precise » est un adjectif."],
+            ["Dear Mister Smith,", "Dear **Mr** Smith,", "On utilise l'abréviation."],
+            ["Waiting for your answer.", "**I look forward to** hearing from you.", "Phrase incomplète et sèche."],
+            ["I propose you to meet.", "I **suggest** (that) we meet.", "propose + to + verbe n'existe pas dans ce sens."],
+            ["Thanks in advance for your return.", "Thank you in advance for your **reply** / **feedback**.", "« return » = retour (physique)."],
+            ["We will discuss about it.", "We will **discuss** it.", "discuss est transitif direct."]
+          ]
+        },
+        { "type": "warning", "label": "Erreur fréquente", "text": "**Information**, **advice** et **feedback** sont indénombrables : jamais de -s, jamais de « an »." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Quelle formule est correcte pour joindre un document ?",
+      "choices": ["I join you the document.", "Please find attached the document.", "You will find joined the document.", "I attach you the document."],
+      "answer": 1,
+      "explanation": "**Please find attached** est la formule standard ; « join » signifie rejoindre."
+    },
+    {
+      "q": "Could you please ______ the delivery date?",
+      "choices": ["precise", "specify", "precision", "precisely"],
+      "answer": 1,
+      "explanation": "« préciser » se traduit par **specify** ou **confirm** ; « precise » est un adjectif."
+    },
+    {
+      "q": "Quelle clôture convient à un e-mail adressé à un client que vous ne connaissez pas ?",
+      "choices": ["Cheers,", "See ya,", "Kind regards,", "Love,"],
+      "answer": 2,
+      "explanation": "**Kind regards** ou **Best regards** sont neutres et professionnels."
+    },
+    {
+      "q": "We would like to ______ the new pricing at the next meeting.",
+      "choices": ["discuss about", "discuss", "discuss on", "discussing"],
+      "answer": 1,
+      "explanation": "**discuss** se construit sans préposition."
+    },
+    {
+      "q": "Thank you for your ______ on the draft proposal.",
+      "choices": ["feedbacks", "a feedback", "feedback", "feedbacking"],
+      "answer": 2,
+      "explanation": "**feedback** est indénombrable : pas de -s ni d'article « a »."
+    }
+  ]
+}

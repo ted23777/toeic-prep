@@ -1,0 +1,100 @@
+{
+  "id": "audit-mission",
+  "title": "Audit : déroulé d'une mission",
+  "category": "Métier : Audit",
+  "summary": "De la lettre de mission au rapport : planification, travaux, échantillonnage, constats et opinion.",
+  "toeicParts": [],
+  "sections": [
+    {
+      "heading": "Les étapes d'une mission",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["audit engagement", "mission d'audit"],
+            ["engagement letter", "lettre de mission"],
+            ["audit plan / planning phase", "plan d'audit / phase de planification"],
+            ["kick-off meeting", "réunion de lancement"],
+            ["fieldwork", "travaux sur le terrain"],
+            ["walkthrough", "test de cheminement"],
+            ["closing meeting", "réunion de clôture"],
+            ["audit report", "rapport d'audit"],
+            ["follow-up", "suivi des recommandations"]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Travaux et éléments probants",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["audit evidence", "éléments probants"],
+            ["sample / sampling", "échantillon / échantillonnage"],
+            ["to test / testing", "tester / tests"],
+            ["supporting documents", "pièces justificatives"],
+            ["working papers", "dossier de travail"],
+            ["materiality", "seuil de signification"],
+            ["material misstatement", "anomalie significative"],
+            ["to reconcile / reconciliation", "rapprocher / rapprochement"]
+          ]
+        },
+        { "type": "example", "en": "We **selected** a sample of 25 invoices and **traced** them **to** the supporting documents.", "fr": "Nous avons sélectionné un échantillon de 25 factures et les avons rapprochées des pièces justificatives." }
+      ]
+    },
+    {
+      "heading": "Constats et opinion",
+      "blocks": [
+        { "type": "p", "text": "Un constat (**finding**) suit souvent le schéma **condition – criteria – cause – effect – recommendation** : ce qui a été observé, la règle attendue, la cause, l'impact et la recommandation." },
+        { "type": "example", "en": "**We noted that** 4 out of 25 purchase orders **had not been approved** in accordance with the procurement policy.", "fr": "Nous avons constaté que 4 bons de commande sur 25 n'avaient pas été approuvés conformément à la politique d'achats." },
+        {
+          "type": "table",
+          "caption": "Types d'opinion (audit externe)",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["unqualified (clean) opinion", "opinion sans réserve"],
+            ["qualified opinion", "opinion avec réserve"],
+            ["adverse opinion", "opinion défavorable"],
+            ["disclaimer of opinion", "impossibilité d'exprimer une opinion"]
+          ]
+        },
+        { "type": "warning", "label": "Piège", "text": "**unqualified** opinion est la meilleure opinion possible (sans réserve), pas une opinion « non qualifiée »." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "The document that defines the scope and terms of the audit is the:",
+      "choices": ["audit report", "engagement letter", "working paper", "closing memo"],
+      "answer": 1,
+      "explanation": "**Engagement letter** = lettre de mission."
+    },
+    {
+      "q": "An « unqualified opinion » means that:",
+      "choices": ["the auditor is not qualified", "the financial statements are fairly presented, with no reservations", "the audit could not be completed", "there are major errors"],
+      "answer": 1,
+      "explanation": "**Unqualified** = sans réserve : c'est l'opinion la plus favorable."
+    },
+    {
+      "q": "We noted that three expense claims ______ by a manager.",
+      "choices": ["had not been approved", "have not approve", "did not approved", "were not approving"],
+      "answer": 0,
+      "explanation": "Constat antérieur à la date de l'observation, sens passif → **had not been approved**."
+    },
+    {
+      "q": "Selecting 30 transactions out of 2,000 to test them is called:",
+      "choices": ["walkthrough", "sampling", "reconciliation", "materiality"],
+      "answer": 1,
+      "explanation": "**Sampling** = échantillonnage."
+    },
+    {
+      "q": "The phase where auditors collect evidence on site is the:",
+      "choices": ["fieldwork", "kick-off", "follow-up", "sign-off"],
+      "answer": 0,
+      "explanation": "**Fieldwork** = travaux sur le terrain."
+    }
+  ]
+}

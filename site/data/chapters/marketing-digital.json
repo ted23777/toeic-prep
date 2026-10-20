@@ -1,0 +1,86 @@
+{
+  "id": "marketing-digital",
+  "title": "Marketing : digital et indicateurs",
+  "category": "Métier : Marketing",
+  "summary": "Funnel, leads, taux de conversion, A/B test, ROI : piloter et présenter une campagne.",
+  "toeicParts": [],
+  "sections": [
+    {
+      "heading": "Le parcours client",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "**Awareness** : le prospect découvre la marque.",
+            "**Consideration** : il compare les offres.",
+            "**Conversion** : il achète, s'inscrit ou demande un devis.",
+            "**Retention** / **loyalty** : il revient et recommande."
+          ]
+        },
+        { "type": "p", "text": "On parle de **sales funnel** ou **marketing funnel** (entonnoir). Un **lead** est un contact qualifié qui a montré un intérêt ; un **prospect** est un client potentiel." }
+      ]
+    },
+    {
+      "heading": "Les indicateurs (metrics)",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Indicateur", "Sens"],
+          "rows": [
+            ["reach / impressions", "nombre de personnes touchées / nombre d'affichages"],
+            ["click-through rate (CTR)", "taux de clic"],
+            ["conversion rate", "taux de conversion"],
+            ["bounce rate", "taux de rebond"],
+            ["engagement rate", "taux d'engagement (likes, partages, commentaires)"],
+            ["cost per click (CPC) / cost per lead (CPL)", "coût par clic / par contact"],
+            ["customer acquisition cost (CAC)", "coût d'acquisition client"],
+            ["churn rate / retention rate", "taux d'attrition / de rétention"],
+            ["return on investment (ROI)", "retour sur investissement"]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Tester et présenter les résultats",
+      "blocks": [
+        { "type": "p", "text": "Un **A/B test** compare deux versions (A et B) d'un e-mail, d'une page ou d'une annonce pour garder la plus performante." },
+        { "type": "example", "en": "Version B **outperformed** version A, with a conversion rate 1.5 points **higher**.", "fr": "La version B a fait mieux que la version A, avec un taux de conversion supérieur de 1,5 point." },
+        { "type": "example", "en": "The campaign **generated** 1,200 leads **at a cost of** €14 per lead.", "fr": "La campagne a généré 1 200 contacts pour un coût de 14 € par contact." },
+        { "type": "tip", "label": "Astuce pro", "text": "Comparatifs utiles : **higher / lower than**, **twice as many … as**, **the most effective** channel, **outperform**, **underperform**." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "The percentage of visitors who leave the website after viewing only one page is the:",
+      "choices": ["click-through rate", "bounce rate", "churn rate", "reach"],
+      "answer": 1,
+      "explanation": "**Bounce rate** = taux de rebond."
+    },
+    {
+      "q": "The percentage of customers who stop using a service over a period is the:",
+      "choices": ["churn rate", "conversion rate", "engagement rate", "CTR"],
+      "answer": 0,
+      "explanation": "**Churn rate** = taux d'attrition."
+    },
+    {
+      "q": "The new subject line ______ the old one by 20%.",
+      "choices": ["outperformed", "overperformed", "upperformed", "outperform than"],
+      "answer": 0,
+      "explanation": "**outperform** = faire mieux que (transitif direct)."
+    },
+    {
+      "q": "The e-mail campaign generated twice ______ leads as the social media campaign.",
+      "choices": ["more", "as many", "as much", "most"],
+      "answer": 1,
+      "explanation": "Comparaison d'égalité multipliée avec un dénombrable : **twice as many … as**."
+    },
+    {
+      "q": "« Coût d'acquisition client » se dit :",
+      "choices": ["customer acquisition cost", "client buying price", "customer purchase fee", "acquisition client cost"],
+      "answer": 0,
+      "explanation": "**Customer acquisition cost (CAC)**."
+    }
+  ]
+}

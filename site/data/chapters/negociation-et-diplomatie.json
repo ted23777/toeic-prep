@@ -1,0 +1,91 @@
+{
+  "id": "negociation-et-diplomatie",
+  "title": "Négocier avec diplomatie",
+  "category": "Anglais des affaires",
+  "summary": "Adoucir son discours, formuler une demande, proposer un compromis et dire non sans fermer la porte.",
+  "toeicParts": [2, 3, 5],
+  "sections": [
+    {
+      "heading": "Adoucir le message",
+      "blocks": [
+        { "type": "p", "text": "L'anglais professionnel utilise beaucoup de **softeners** : des mots qui rendent un message plus poli sans en changer le fond." },
+        {
+          "type": "table",
+          "head": ["Direct (risqué)", "Diplomatique"],
+          "rows": [
+            ["Your price is too high.", "Your price **seems a little** high **for our budget**."],
+            ["We can't do that.", "**I'm afraid** that **might be** difficult for us."],
+            ["You're late with the delivery.", "**It seems** the delivery is **slightly** behind schedule."],
+            ["Send me the file.", "**Could you possibly** send me the file?"],
+            ["That's a bad idea.", "**I'm not sure** that's **the best** option."],
+            ["We want a discount.", "**We were hoping** you **might be able to** offer a discount."]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Proposer et marchander",
+      "blocks": [
+        { "type": "p", "text": "Le conditionnel est l'outil central de la négociation : on lie une concession à une contrepartie." },
+        { "type": "example", "en": "**If** you **could** commit to a two-year contract, we **would** reduce the price by 10%.", "fr": "Si vous pouviez vous engager sur deux ans, nous baisserions le prix de 10 %." },
+        { "type": "example", "en": "We **could** agree to that, **provided that** delivery is guaranteed within 30 days.", "fr": "Nous pourrions accepter, à condition que la livraison soit garantie sous 30 jours." },
+        {
+          "type": "list",
+          "items": [
+            "What **would** you say to…? / How **would** you feel about…?",
+            "Let's **meet halfway**. (couper la poire en deux)",
+            "That's our **bottom line**. (notre dernière limite)",
+            "Is there any **room for negotiation** / **flexibility** on…?"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Dire non sans fermer la porte",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "**Unfortunately**, we're not in a position to accept that at this stage.",
+            "I **appreciate** the offer, **but** it doesn't quite work for us.",
+            "**What we could do instead is**…",
+            "Let me **get back to you** on that after I've discussed it with my team."
+          ]
+        },
+        { "type": "tip", "label": "Astuce pro", "text": "Commencez par reconnaître le point de l'autre (I understand your concern…), puis donnez votre position, puis proposez une alternative." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Quelle phrase est la plus diplomatique ?",
+      "choices": ["Your offer is bad.", "We refuse your offer.", "I'm afraid this offer doesn't quite meet our needs.", "This offer is not good."],
+      "answer": 2,
+      "explanation": "**I'm afraid** + **doesn't quite** adoucissent le refus."
+    },
+    {
+      "q": "If you ______ the order to 500 units, we would offer free shipping.",
+      "choices": ["increase", "increased", "will increase", "would increase"],
+      "answer": 1,
+      "explanation": "Conditionnel de type 2 (would dans la principale) → **prétérit** après if."
+    },
+    {
+      "q": "« Let's meet halfway » signifie :",
+      "choices": ["Retrouvons-nous à mi-chemin géographiquement.", "Trouvons un compromis.", "Arrêtons la réunion à mi-parcours.", "Faisons une pause."],
+      "answer": 1,
+      "explanation": "**Meet halfway** = faire chacun la moitié du chemin, trouver un compromis."
+    },
+    {
+      "q": "Is there any ______ for negotiation on the payment terms?",
+      "choices": ["place", "room", "space", "area"],
+      "answer": 1,
+      "explanation": "Collocation figée : **room for negotiation**."
+    },
+    {
+      "q": "« That's our bottom line » signifie :",
+      "choices": ["C'est notre chiffre d'affaires.", "C'est notre limite, nous n'irons pas plus loin.", "C'est notre dernière ligne de budget.", "C'est notre conclusion écrite."],
+      "answer": 1,
+      "explanation": "En négociation, **bottom line** = la position minimale acceptable. (En finance, c'est aussi le résultat net.)"
+    }
+  ]
+}

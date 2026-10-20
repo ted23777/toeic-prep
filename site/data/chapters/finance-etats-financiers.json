@@ -1,0 +1,99 @@
+{
+  "id": "finance-etats-financiers",
+  "title": "Finance : états financiers",
+  "category": "Métier : Finance",
+  "summary": "Bilan, compte de résultat, flux de trésorerie : les termes clés et leurs faux amis.",
+  "toeicParts": [],
+  "sections": [
+    {
+      "heading": "Les trois états financiers",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français", "Contenu"],
+          "rows": [
+            ["balance sheet", "bilan", "ce que l'entreprise possède et doit à une date donnée"],
+            ["income statement / profit and loss (P&L)", "compte de résultat", "produits et charges sur une période"],
+            ["cash flow statement", "tableau des flux de trésorerie", "entrées et sorties d'argent"],
+            ["notes to the financial statements", "annexe", "explications et détails"]
+          ]
+        },
+        { "type": "p", "text": "L'exercice comptable se dit **fiscal year** (US) ou **financial year** (UK)." }
+      ]
+    },
+    {
+      "heading": "Le bilan",
+      "blocks": [
+        { "type": "p", "text": "Équation fondamentale : **Assets = Liabilities + Equity**." },
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["assets (current / non-current)", "actifs (circulants / immobilisés)"],
+            ["liabilities", "dettes, passif externe"],
+            ["equity / shareholders' equity", "capitaux propres"],
+            ["accounts receivable", "créances clients"],
+            ["accounts payable", "dettes fournisseurs"],
+            ["inventory (US) / stock (UK)", "stocks"],
+            ["cash and cash equivalents", "trésorerie et équivalents"],
+            ["depreciation / amortization", "amortissement (corporel / incorporel)"]
+          ]
+        },
+        { "type": "warning", "label": "Erreur fréquente", "text": "**liabilities** ne veut pas dire « liabilité » : ce sont les **dettes** et obligations de l'entreprise." }
+      ]
+    },
+    {
+      "heading": "Le compte de résultat",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["revenue / sales / turnover (UK)", "chiffre d'affaires"],
+            ["cost of goods sold (COGS)", "coût des ventes"],
+            ["gross margin / gross profit", "marge brute"],
+            ["operating expenses (OPEX)", "charges d'exploitation"],
+            ["EBITDA", "indicateur proche de l'EBE (excédent brut d'exploitation)"],
+            ["operating income / EBIT", "résultat d'exploitation"],
+            ["net income / net profit / bottom line", "résultat net"],
+            ["earnings per share (EPS)", "bénéfice par action"]
+          ]
+        },
+        { "type": "warning", "label": "Faux ami", "text": "Au Royaume-Uni, **turnover** veut dire chiffre d'affaires, mais **staff turnover** désigne la rotation du personnel. Le contexte décide." },
+        { "type": "example", "en": "Net income **rose by** 12% **to** €3.4 million, **driven by** strong sales in Asia.", "fr": "Le résultat net a progressé de 12 % à 3,4 M€, porté par de fortes ventes en Asie." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "« Le bilan » se traduit par :",
+      "choices": ["the income statement", "the balance sheet", "the cash flow", "the budget"],
+      "answer": 1,
+      "explanation": "**Balance sheet** = bilan. Le compte de résultat est l'**income statement**."
+    },
+    {
+      "q": "Assets = Liabilities + ______",
+      "choices": ["Revenue", "Equity", "Expenses", "Cash"],
+      "answer": 1,
+      "explanation": "Actif = Dettes + **Capitaux propres** (equity)."
+    },
+    {
+      "q": "Money that customers owe the company is recorded as:",
+      "choices": ["accounts payable", "accounts receivable", "equity", "depreciation"],
+      "answer": 1,
+      "explanation": "**Accounts receivable** = créances clients. **Payable** = ce que l'entreprise doit."
+    },
+    {
+      "q": "« Bottom line » in a financial report refers to:",
+      "choices": ["revenue", "net income", "total assets", "the last page"],
+      "answer": 1,
+      "explanation": "La dernière ligne du compte de résultat : le **résultat net**."
+    },
+    {
+      "q": "Gross margin improved, ______ by lower raw material costs.",
+      "choices": ["driving", "driven", "drove", "drives"],
+      "answer": 1,
+      "explanation": "Sens passif (la marge est tirée par…) → participe passé **driven**."
+    }
+  ]
+}

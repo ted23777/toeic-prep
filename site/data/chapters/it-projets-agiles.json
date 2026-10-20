@@ -1,0 +1,97 @@
+{
+  "id": "it-projets-agiles",
+  "title": "IT : projets et méthodes agiles",
+  "category": "Métier : IT",
+  "summary": "Backlog, sprint, stakeholders, scope, delivery : parler d'un projet IT avec les bons mots.",
+  "toeicParts": [],
+  "sections": [
+    {
+      "heading": "Le vocabulaire du projet",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["stakeholder", "partie prenante"],
+            ["requirements", "exigences, besoins (fonctionnels / non fonctionnels)"],
+            ["scope / scope creep", "périmètre / dérive du périmètre"],
+            ["deliverable", "livrable"],
+            ["milestone", "jalon"],
+            ["deadline / timeline", "échéance / calendrier"],
+            ["go-live / rollout", "mise en production / déploiement progressif"],
+            ["proof of concept (PoC)", "preuve de concept"],
+            ["sign-off", "validation formelle"],
+            ["to be on track / behind schedule", "être dans les temps / en retard"]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Scrum et agilité",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Terme", "Sens"],
+          "rows": [
+            ["product backlog", "liste priorisée de tout ce qui reste à faire"],
+            ["user story", "besoin exprimé du point de vue de l'utilisateur"],
+            ["sprint", "itération courte (souvent 2 semaines)"],
+            ["daily stand-up", "point quotidien de 15 minutes"],
+            ["sprint review / retrospective", "démonstration du travail / analyse du fonctionnement de l'équipe"],
+            ["story points / velocity", "estimation de l'effort / capacité de l'équipe par sprint"],
+            ["definition of done", "critères pour considérer une tâche terminée"],
+            ["blocker", "obstacle qui empêche d'avancer"]
+          ]
+        },
+        { "type": "example", "en": "As a sales manager, I want to **export** the dashboard to PDF **so that** I can share it with clients.", "fr": "Format type d'une user story : As a… I want… so that…" }
+      ]
+    },
+    {
+      "heading": "Le point quotidien",
+      "blocks": [
+        { "type": "p", "text": "Trois questions, trois temps verbaux :" },
+        {
+          "type": "list",
+          "items": [
+            "**Yesterday, I finished** the API integration. (prétérit, action terminée)",
+            "**Today, I'm working on** the unit tests. (présent continu)",
+            "**I'm blocked by** missing access rights. **I need** someone from the infra team to **grant** me access."
+          ]
+        },
+        { "type": "tip", "label": "Astuce pro", "text": "Pour signaler un risque sans alarmer : « There's a risk that we might slip by a few days if… » (slip = glisser, prendre du retard)." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "The client keeps adding new features without changing the deadline. This is called:",
+      "choices": ["scope creep", "go-live", "velocity", "sign-off"],
+      "answer": 0,
+      "explanation": "**Scope creep** = dérive du périmètre, ajout progressif de besoins non prévus."
+    },
+    {
+      "q": "In the daily stand-up: « Yesterday I ______ the login bug. »",
+      "choices": ["have fixed", "fixed", "am fixing", "fix"],
+      "answer": 1,
+      "explanation": "« Yesterday » = moment passé daté → **prétérit** : fixed."
+    },
+    {
+      "q": "« We need the client's ______ before we deploy to production. »",
+      "choices": ["sign-off", "backlog", "blocker", "velocity"],
+      "answer": 0,
+      "explanation": "**Sign-off** = validation formelle."
+    },
+    {
+      "q": "A key date in the project plan, such as « end of testing », is a:",
+      "choices": ["milestone", "deliverable", "requirement", "sprint"],
+      "answer": 0,
+      "explanation": "**Milestone** = jalon. Un **deliverable** est un produit livré (document, logiciel)."
+    },
+    {
+      "q": "« I can't move forward until I get access to the database. » In Scrum, this is a:",
+      "choices": ["user story", "retrospective", "blocker", "story point"],
+      "answer": 2,
+      "explanation": "Un **blocker** empêche d'avancer ; on le signale au daily stand-up."
+    }
+  ]
+}

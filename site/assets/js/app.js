@@ -2,13 +2,17 @@ import { h, clear, richText } from './dom.js';
 import { renderQuiz, shuffle } from './quiz.js';
 
 const SITE_NAME = 'TOEIC Prep';
-/** Identifiants de chapitre autorisés : empêche toute manipulation de chemin via l'URL. */
-const ID_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
+/**
+ * Identifiants autorisés (chapitres, parcours) : minuscules, chiffres et tirets, 64 caractères max.
+ * Empêche toute manipulation de chemin via l'URL ; regex linéaire et bornée (pas de ReDoS).
+ */
+const ID_PATTERN = /^[a-z0-9][a-z0-9-]{0,63}$/;
 const TRAINING_SIZE = 10;
 
 const main = document.getElementById('main');
 const chapterCache = new Map();
 let indexPromise = null;
+let tracksPromise = null;
 
 /* ------------------------------------------------------------------ */
 /* Données                                                             */
@@ -27,6 +31,20 @@ function loadIndex() {
     throw err;
   });
   return indexPromise;
+}
+
+function loadTracks() {
+  tracksPromise ??= getJSON('data/tracks.json').catch((err) => {
+    tracksPromise = null;
+    throw err;
+  });
+  return tracksPromise;
+}
+
+async function loadTrack(id) {
+  if (!ID_PATTERN.test(id)) return null;
+  const data = await loadTracks();
+  return data.tracks.find((t) => t.id === id) ?? null;
 }
 
 async function loadChapter(id) {
@@ -59,8 +77,8 @@ const blockRenderers = {
       h('p', { class: 'en', lang: 'en' }, richText(b.en)),
       b.fr ? h('p', { class: 'fr' }, richText(b.fr)) : null,
     ),
-  tip: (b) => h('aside', { class: 'tip' }, h('p', {}, h('strong', {}, 'Astuce TOEIC : '), richText(b.text))),
-  warning: (b) => h('aside', { class: 'warning' }, h('p', {}, h('strong', {}, 'Piège : '), richText(b.text))),
+  tip: (b) => h('aside', { class: 'tip' }, h('p', {}, h('strong', {}, `${b.label ?? 'Astuce TOEIC'} : `), richText(b.text))),
+  warning: (b) => h('aside', { class: 'warning' }, h('p', {}, h('strong', {}, `${b.label ?? 'Piège'} : `), richText(b.text))),
   table: (b) =>
     h(
       'div',
@@ -117,8 +135,22 @@ function partsLabel(parts) {
   return `Parties ${parts.join(', ')}`;
 }
 
+function trackCard(track) {
+  return h(
+    'li',
+    {},
+    h(
+      'a',
+      { class: 'card card-track', href: `#/parcours/${track.id}` },
+      h('span', { class: 'card-title' }, track.title),
+      h('span', { class: 'card-summary' }, track.audience),
+      h('span', { class: 'badge' }, `${new Set(track.steps.map((s) => s.week)).size} semaines · ${track.steps.length} étapes`),
+    ),
+  );
+}
+
 async function viewHome() {
-  const index = await loadIndex();
+  const [index, tracksData] = await Promise.all([loadIndex(), loadTracks()]);
   const groups = new Map();
   for (const chapter of index.chapters) {
     if (!groups.has(chapter.category)) groups.set(chapter.category, []);
@@ -137,7 +169,18 @@ async function viewHome() {
         `${index.chapters.length} fiches de cours avec un quiz corrigé à la fin de chacune. `,
         'Pas de compte, pas de cookie, rien n’est enregistré.',
       ),
-      h('a', { class: 'btn btn-primary', href: '#/entrainement' }, 'Lancer un entraînement aléatoire'),
+      h(
+        'div',
+        { class: 'actions' },
+        h('a', { class: 'btn btn-primary', href: '#/parcours' }, 'Choisir un parcours métier'),
+        h('a', { class: 'btn', href: '#/entrainement' }, 'Entraînement aléatoire'),
+      ),
+    ),
+    h(
+      'section',
+      { class: 'category' },
+      h('h2', {}, 'Parcours métier'),
+      h('ul', { class: 'cards' }, tracksData.tracks.map(trackCard)),
     ),
     ...[...groups].map(([category, chapters]) =>
       h(
@@ -223,9 +266,99 @@ async function viewChapter(id) {
   );
 }
 
-async function viewTraining() {
+async function viewTracks() {
+  const data = await loadTracks();
+  return page(
+    'Parcours métier',
+    h(
+      'section',
+      { class: 'hero hero-small' },
+      h('h1', {}, 'Parcours métier'),
+      h(
+        'p',
+        { class: 'lead' },
+        `Six semaines pour préparer le TOEIC tout en apprenant l’anglais de votre métier. Rythme conseillé : ${data.weeklyEffort}.`,
+      ),
+    ),
+    h('ul', { class: 'cards' }, data.tracks.map(trackCard)),
+  );
+}
+
+async function viewTrack(id) {
+  const track = await loadTrack(id);
+  if (!track) return viewNotFound();
+  const [index, data] = await Promise.all([loadIndex(), loadTracks()]);
+  const byId = new Map(index.chapters.map((c) => [c.id, c]));
+
+  const weeks = new Map();
+  for (const step of track.steps) {
+    if (!weeks.has(step.week)) weeks.set(step.week, []);
+    weeks.get(step.week).push(step);
+  }
+
+  return page(
+    `Parcours ${track.title}`,
+    h(
+      'nav',
+      { class: 'breadcrumb', 'aria-label': 'Fil d’Ariane' },
+      h('a', { href: '#/parcours' }, 'Parcours'),
+      ' / ',
+      h('span', { 'aria-current': 'page' }, track.title),
+    ),
+    h(
+      'article',
+      { class: 'chapter' },
+      h(
+        'header',
+        {},
+        h('p', { class: 'eyebrow' }, `Parcours métier · ${weeks.size} semaines · ${data.weeklyEffort}`),
+        h('h1', {}, track.title),
+        h('p', { class: 'lead' }, track.summary),
+        h('p', {}, h('strong', {}, 'Pour qui : '), track.audience),
+        h('p', {}, h('strong', {}, 'À la fin : '), track.outcome),
+      ),
+      [...weeks].map(([week, steps]) =>
+        h(
+          'section',
+          { class: 'week' },
+          h('h2', {}, `Semaine ${week}`),
+          h(
+            'ol',
+            { class: 'steps' },
+            steps.map((step) => {
+              const chapter = byId.get(step.chapter);
+              if (!chapter) return null;
+              return h(
+                'li',
+                {},
+                h('a', { class: 'step-link', href: `#/chapitre/${chapter.id}` }, chapter.title),
+                h('span', { class: 'step-category' }, chapter.category),
+                h('p', { class: 'step-why' }, step.why),
+              );
+            }),
+          ),
+        ),
+      ),
+      h(
+        'section',
+        { class: 'week' },
+        h('h2', {}, 'Bilan'),
+        h('p', {}, 'Faites une série de questions tirées des chapitres de ce parcours, puis un test blanc complet en conditions réelles.'),
+        h('a', { class: 'btn btn-primary', href: `#/entrainement/${track.id}` }, 'S’entraîner sur ce parcours'),
+      ),
+    ),
+  );
+}
+
+async function viewTraining(trackId) {
   const index = await loadIndex();
-  const chapters = await Promise.all(index.chapters.map((c) => loadChapter(c.id)));
+  let track = null;
+  if (trackId) {
+    track = await loadTrack(trackId);
+    if (!track) return viewNotFound();
+  }
+  const ids = track ? [...new Set(track.steps.map((s) => s.chapter))] : index.chapters.map((c) => c.id);
+  const chapters = await Promise.all(ids.map((id) => loadChapter(id)));
   const pool = chapters
     .filter(Boolean)
     .flatMap((c) => (c.quiz ?? []).map((q) => ({ ...q, source: c.title })));
@@ -238,14 +371,20 @@ async function viewTraining() {
     'Nouvelle série',
   );
 
+  const scope = track ? `du parcours ${track.title}` : 'du site';
   return page(
-    'Entraînement',
+    track ? `Entraînement ${track.title}` : 'Entraînement',
     h(
       'section',
       { class: 'hero hero-small' },
-      h('h1', {}, 'Entraînement'),
-      h('p', { class: 'lead' }, `Questions tirées au hasard parmi les ${pool.length} du site. Rien n’est enregistré.`),
-      again,
+      h('h1', {}, track ? `Entraînement : ${track.title}` : 'Entraînement'),
+      h('p', { class: 'lead' }, `Questions tirées au hasard parmi les ${pool.length} ${scope}. Rien n’est enregistré.`),
+      h(
+        'div',
+        { class: 'actions' },
+        again,
+        track ? h('a', { class: 'btn', href: `#/parcours/${track.id}` }, 'Retour au parcours') : null,
+      ),
     ),
     container,
   );
@@ -291,7 +430,7 @@ function viewNotFound() {
       'section',
       { class: 'hero hero-small' },
       h('h1', {}, 'Page introuvable'),
-      h('p', {}, 'Ce chapitre n’existe pas ou a été déplacé.'),
+      h('p', {}, 'Cette page n’existe pas ou a été déplacée.'),
       h('a', { class: 'btn btn-primary', href: '#/' }, 'Retour aux chapitres'),
     ),
   );
@@ -317,18 +456,21 @@ function viewError(err) {
 
 let routeSeq = 0;
 
-async function resolveView(view, param) {
-  if (view === '') return viewHome();
-  if (view === 'chapitre') {
-    let id;
-    try {
-      id = decodeURIComponent(param);
-    } catch {
-      return viewNotFound(); // encodage invalide (ex. « %E0 »)
-    }
-    return viewChapter(id);
+function decodeParam(param) {
+  try {
+    return decodeURIComponent(param);
+  } catch {
+    return null; // encodage invalide (ex. « %E0 »)
   }
-  if (view === 'entrainement') return viewTraining();
+}
+
+async function resolveView(view, rawParam) {
+  const param = decodeParam(rawParam);
+  if (param === null) return viewNotFound();
+  if (view === '') return viewHome();
+  if (view === 'chapitre') return viewChapter(param);
+  if (view === 'parcours') return param ? viewTrack(param) : viewTracks();
+  if (view === 'entrainement') return viewTraining(param || null);
   if (view === 'a-propos') return viewAbout();
   return viewNotFound();
 }

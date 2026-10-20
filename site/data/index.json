@@ -1,82 +1,226 @@
 {
-  "version": 1,
+  "version": 2,
   "chapters": [
     {
       "id": "comprendre-le-toeic",
       "title": "Comprendre l'épreuve",
       "category": "Méthode",
       "summary": "Format du TOEIC Listening & Reading, les 7 parties, le barème et comment s'organiser.",
-      "toeicParts": [1, 2, 3, 4, 5, 6, 7]
+      "toeicParts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
     },
     {
       "id": "strategies-listening",
       "title": "Stratégies Listening",
       "category": "Méthode",
       "summary": "Les pièges et les réflexes à adopter pour chacune des parties 1 à 4.",
-      "toeicParts": [1, 2, 3, 4]
+      "toeicParts": [
+        1,
+        2,
+        3,
+        4
+      ]
     },
     {
       "id": "strategies-reading",
       "title": "Stratégies Reading",
       "category": "Méthode",
       "summary": "Gagner du temps en partie 5, raisonner en partie 6, lire efficacement en partie 7.",
-      "toeicParts": [5, 6, 7]
+      "toeicParts": [
+        5,
+        6,
+        7
+      ]
     },
     {
       "id": "temps-verbaux",
       "title": "Les temps verbaux",
       "category": "Grammaire",
       "summary": "Présent simple ou continu, present perfect ou prétérit, futur : les choix testés en partie 5.",
-      "toeicParts": [5, 6]
+      "toeicParts": [
+        5,
+        6
+      ]
     },
     {
       "id": "formes-des-mots",
       "title": "Nature et forme des mots",
       "category": "Grammaire",
       "summary": "Nom, verbe, adjectif ou adverbe ? Le type de question le plus fréquent en partie 5.",
-      "toeicParts": [5, 6]
+      "toeicParts": [
+        5,
+        6
+      ]
     },
     {
       "id": "prepositions",
       "title": "Les prépositions",
       "category": "Grammaire",
       "summary": "In, on, at, by, until, during, while… et les combinaisons verbe + préposition fréquentes.",
-      "toeicParts": [5, 6]
+      "toeicParts": [
+        5,
+        6
+      ]
     },
     {
       "id": "connecteurs",
       "title": "Les connecteurs logiques",
       "category": "Grammaire",
       "summary": "Although ou despite ? However ou but ? Relier les idées, clé des parties 5 et 6.",
-      "toeicParts": [5, 6, 7]
+      "toeicParts": [
+        5,
+        6,
+        7
+      ]
     },
     {
       "id": "conditionnels",
       "title": "Les conditionnels",
       "category": "Grammaire",
       "summary": "If, unless, provided that, should… Les trois types de conditionnels et leurs variantes.",
-      "toeicParts": [5, 6]
+      "toeicParts": [
+        5,
+        6
+      ]
     },
     {
       "id": "passif-et-relatives",
       "title": "Voix passive et relatives",
       "category": "Grammaire",
       "summary": "Actif ou passif ? Who, which, whose, that : choisir le bon pronom relatif.",
-      "toeicParts": [5, 6]
+      "toeicParts": [
+        5,
+        6
+      ]
     },
     {
       "id": "accords-et-pronoms",
       "title": "Accords, quantifieurs et pronoms",
       "category": "Grammaire",
       "summary": "Accord sujet-verbe, much ou many, few ou little, pronoms réfléchis et possessifs.",
-      "toeicParts": [5, 6]
+      "toeicParts": [
+        5,
+        6
+      ]
     },
     {
       "id": "vocabulaire-business",
       "title": "Vocabulaire professionnel",
       "category": "Vocabulaire",
       "summary": "Les champs lexicaux récurrents : RH, réunions, finance, logistique, voyages d'affaires.",
-      "toeicParts": [3, 4, 5, 6, 7]
+      "toeicParts": [
+        3,
+        4,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "emails-professionnels",
+      "title": "Écrire des e-mails professionnels",
+      "category": "Anglais des affaires",
+      "summary": "Structure, formules d'ouverture et de clôture, registre, et les erreurs typiques des francophones.",
+      "toeicParts": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "reunions-et-appels",
+      "title": "Réunions et appels",
+      "category": "Anglais des affaires",
+      "summary": "Animer, intervenir, être d'accord ou non, clarifier, et conclure avec des actions claires.",
+      "toeicParts": [
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": "presentations-et-chiffres",
+      "title": "Présenter et commenter des chiffres",
+      "category": "Anglais des affaires",
+      "summary": "Structurer une présentation, décrire une tendance, lire les nombres sans faux pas.",
+      "toeicParts": [
+        4,
+        5,
+        7
+      ]
+    },
+    {
+      "id": "negociation-et-diplomatie",
+      "title": "Négocier avec diplomatie",
+      "category": "Anglais des affaires",
+      "summary": "Adoucir son discours, formuler une demande, proposer un compromis et dire non sans fermer la porte.",
+      "toeicParts": [
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "id": "it-projets-agiles",
+      "title": "IT : projets et méthodes agiles",
+      "category": "Métier : IT",
+      "summary": "Backlog, sprint, stakeholders, scope, delivery : parler d'un projet IT avec les bons mots.",
+      "toeicParts": []
+    },
+    {
+      "id": "it-production-et-donnees",
+      "title": "IT : production, incidents et données",
+      "category": "Métier : IT",
+      "summary": "Gérer un incident, rédiger un post-mortem, parler de pipelines de données et de tableaux de bord.",
+      "toeicParts": []
+    },
+    {
+      "id": "marketing-strategie",
+      "title": "Marketing : stratégie et marque",
+      "category": "Métier : Marketing",
+      "summary": "Cible, positionnement, marque, lancement de produit et analyse concurrentielle.",
+      "toeicParts": []
+    },
+    {
+      "id": "marketing-digital",
+      "title": "Marketing : digital et indicateurs",
+      "category": "Métier : Marketing",
+      "summary": "Funnel, leads, taux de conversion, A/B test, ROI : piloter et présenter une campagne.",
+      "toeicParts": []
+    },
+    {
+      "id": "finance-etats-financiers",
+      "title": "Finance : états financiers",
+      "category": "Métier : Finance",
+      "summary": "Bilan, compte de résultat, flux de trésorerie : les termes clés et leurs faux amis.",
+      "toeicParts": []
+    },
+    {
+      "id": "finance-budget-et-reporting",
+      "title": "Finance : budget, prévisions et reporting",
+      "category": "Métier : Finance",
+      "summary": "Budget, forecast, écarts, CAPEX/OPEX, trésorerie : commenter la performance face au plan.",
+      "toeicParts": []
+    },
+    {
+      "id": "audit-mission",
+      "title": "Audit : déroulé d'une mission",
+      "category": "Métier : Audit",
+      "summary": "De la lettre de mission au rapport : planification, travaux, échantillonnage, constats et opinion.",
+      "toeicParts": []
+    },
+    {
+      "id": "audit-controle-interne",
+      "title": "Audit : contrôle interne et conformité",
+      "category": "Métier : Audit",
+      "summary": "Risques, contrôles, séparation des tâches, conformité réglementaire et recommandations.",
+      "toeicParts": []
     }
   ]
 }
