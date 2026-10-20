@@ -1,0 +1,98 @@
+{
+  "id": "entretien-en-anglais",
+  "title": "Réussir un entretien en anglais",
+  "category": "Carrière",
+  "summary": "Se présenter, raconter un projet avec la méthode STAR, traduire son parcours français, poser les bonnes questions.",
+  "toeicParts": [],
+  "sections": [
+    {
+      "heading": "« Tell me about yourself »",
+      "blocks": [
+        { "type": "p", "text": "Visez 60 à 90 secondes, en trois temps : **présent** (ce que vous faites), **passé** (ce qui vous y a mené), **futur** (pourquoi ce poste)." },
+        { "type": "example", "en": "**I'm** a BI consultant **with** two years **of experience** in Power BI and SQL Server. **I've worked on** reporting projects for finance and operations teams. **I'm now looking for** a role where I can work with more clients and **grow towards** data engineering.", "fr": "Présent simple pour l'identité, present perfect pour l'expérience accumulée, présent continu pour le projet actuel." },
+        { "type": "warning", "label": "Erreur fréquente", "text": "« I have 2 years of experience », jamais « I am since 2 years ». Et pour un poste actuel : « I **have been working** at X **since** 2024 »." }
+      ]
+    },
+    {
+      "heading": "Traduire un parcours français",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Français", "Anglais", "Attention"],
+          "rows": [
+            ["diplôme d'ingénieur", "Master's degree in engineering (French « Diplôme d'Ingénieur »)", "« engineer diploma » est peu compris"],
+            ["stage", "internship", "« stage » = scène"],
+            ["alternance", "work-study programme / apprenticeship", "à expliquer en une phrase"],
+            ["formation", "training / degree programme", "« formation » n'est pas un mot anglais courant dans ce sens"],
+            ["ESN", "IT services company / IT consulting firm", "le sigle n'existe pas en anglais"],
+            ["CDI / CDD", "permanent contract / fixed-term contract", ""],
+            ["mission (chez un client)", "client assignment / engagement", ""]
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Raconter un projet : la méthode STAR",
+      "blocks": [
+        {
+          "type": "list",
+          "ordered": true,
+          "items": [
+            "**Situation** : The finance team **was spending** two days a month **building** reports in Excel.",
+            "**Task** : I **was asked to** automate the monthly reporting.",
+            "**Action** : I **built** an SSIS pipeline and a Power BI model with **validated** measures.",
+            "**Result** : Reporting time **went down from** two days **to** one hour, and errors **were reduced**."
+          ]
+        },
+        { "type": "tip", "label": "Astuce pro", "text": "Dites **I**, pas **we**, pour ce que vous avez fait vous-même. Et chiffrez toujours le résultat." }
+      ]
+    },
+    {
+      "heading": "Points faibles et questions à poser",
+      "blocks": [
+        { "type": "example", "en": "**I used to** find it hard to say no to new requests. **I've learned to** prioritize with the client and agree on a scope **before** starting.", "fr": "Un point faible réel, suivi de ce que vous avez mis en place." },
+        {
+          "type": "list",
+          "items": [
+            "What would a typical **client assignment** look like for this role?",
+            "How do you support consultants' **training** and **certifications**?",
+            "What are the main **challenges** the team is facing right now?",
+            "What are the **next steps** in the process?"
+          ]
+        }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "« Je travaille chez Contoso depuis 2024 » :",
+      "choices": ["I work at Contoso since 2024.", "I have been working at Contoso since 2024.", "I am working at Contoso since 2024.", "I worked at Contoso since 2024."],
+      "answer": 1,
+      "explanation": "Situation qui dure jusqu'à maintenant + since → **present perfect continu**."
+    },
+    {
+      "q": "« Un stage de six mois » se traduit par :",
+      "choices": ["a six-month stage", "a six-month internship", "a six-months internship", "a six months training"],
+      "answer": 1,
+      "explanation": "**internship** ; et l'adjectif composé reste au singulier : six-**month**."
+    },
+    {
+      "q": "Dans la méthode STAR, le « R » signifie :",
+      "choices": ["Role", "Result", "Risk", "Reason"],
+      "answer": 1,
+      "explanation": "Situation, Task, Action, **Result**. Chiffrez-le si possible."
+    },
+    {
+      "q": "Comment présenter une ESN à un recruteur anglophone ?",
+      "choices": ["an ESN", "a digital services enterprise", "an IT consulting firm", "a computer society"],
+      "answer": 2,
+      "explanation": "Le sigle ESN n'existe pas en anglais : **IT consulting firm** ou **IT services company**."
+    },
+    {
+      "q": "Reporting time went down ______ two days ______ one hour.",
+      "choices": ["of … at", "from … to", "since … until", "by … by"],
+      "answer": 1,
+      "explanation": "Évolution d'une valeur à une autre : **from … to**."
+    }
+  ]
+}

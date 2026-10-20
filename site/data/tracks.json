@@ -4,23 +4,140 @@
   "tracks": [
     {
       "id": "it",
-      "title": "IT & Data",
+      "title": "IT & Projets",
       "audience": "Développeurs, ingénieurs data, consultants BI, chefs de projet IT",
       "summary": "Préparer le TOEIC tout en apprenant à mener un daily stand-up, gérer un incident et présenter un tableau de bord en anglais.",
       "outcome": "Animer un point projet, rédiger un post-mortem et présenter des indicateurs en anglais.",
       "steps": [
-        { "week": 1, "chapter": "comprendre-le-toeic", "why": "Connaître le format et se fixer un score cible." },
-        { "week": 1, "chapter": "temps-verbaux", "why": "Le daily stand-up repose sur prétérit, présent continu et present perfect." },
-        { "week": 2, "chapter": "emails-professionnels", "why": "Tickets, relances et comptes rendus passent par l'écrit." },
-        { "week": 2, "chapter": "it-projets-agiles", "why": "Le vocabulaire Scrum et projet, utilisé partout en entreprise." },
-        { "week": 3, "chapter": "passif-et-relatives", "why": "Indispensable pour la documentation technique et les post-mortems." },
-        { "week": 3, "chapter": "it-production-et-donnees", "why": "Incidents, support, pipelines et BI." },
-        { "week": 4, "chapter": "reunions-et-appels", "why": "Intervenir en visio avec des équipes internationales." },
-        { "week": 4, "chapter": "formes-des-mots", "why": "Le premier gisement de points en partie 5." },
-        { "week": 5, "chapter": "presentations-et-chiffres", "why": "Présenter un dashboard et commenter des tendances." },
-        { "week": 5, "chapter": "connecteurs", "why": "Structurer une argumentation technique." },
-        { "week": 6, "chapter": "strategies-listening", "why": "Méthode pour les parties 1 à 4." },
-        { "week": 6, "chapter": "strategies-reading", "why": "Gestion du temps pour les parties 5 à 7, puis test blanc." }
+        {
+          "week": 1,
+          "chapter": "comprendre-le-toeic",
+          "why": "Connaître le format et se fixer un score cible."
+        },
+        {
+          "week": 1,
+          "chapter": "temps-verbaux",
+          "why": "Le daily stand-up repose sur prétérit, présent continu et present perfect."
+        },
+        {
+          "week": 2,
+          "chapter": "emails-professionnels",
+          "why": "Tickets, relances et comptes rendus passent par l'écrit."
+        },
+        {
+          "week": 2,
+          "chapter": "it-projets-agiles",
+          "why": "Le vocabulaire Scrum et projet, utilisé partout en entreprise."
+        },
+        {
+          "week": 3,
+          "chapter": "passif-et-relatives",
+          "why": "Indispensable pour la documentation technique et les post-mortems."
+        },
+        {
+          "week": 3,
+          "chapter": "it-production-et-donnees",
+          "why": "Incidents, support, pipelines et BI."
+        },
+        {
+          "week": 4,
+          "chapter": "reunions-et-appels",
+          "why": "Intervenir en visio avec des équipes internationales."
+        },
+        {
+          "week": 4,
+          "chapter": "formes-des-mots",
+          "why": "Le premier gisement de points en partie 5."
+        },
+        {
+          "week": 5,
+          "chapter": "presentations-et-chiffres",
+          "why": "Présenter un dashboard et commenter des tendances."
+        },
+        {
+          "week": 5,
+          "chapter": "connecteurs",
+          "why": "Structurer une argumentation technique."
+        },
+        {
+          "week": 6,
+          "chapter": "strategies-listening",
+          "why": "Méthode pour les parties 1 à 4."
+        },
+        {
+          "week": 6,
+          "chapter": "strategies-reading",
+          "why": "Gestion du temps pour les parties 5 à 7, puis test blanc."
+        }
+      ]
+    },
+    {
+      "id": "data-bi",
+      "title": "Data & BI",
+      "audience": "Consultants BI, data analysts, futurs data engineers, profils juniors visant une ESN",
+      "summary": "Préparer le TOEIC tout en apprenant à parler SQL, ETL et Power BI, à recueillir un besoin métier et à réussir un entretien en anglais.",
+      "outcome": "Mener un atelier de recueil des besoins, présenter un tableau de bord à un client et raconter ses projets en entretien.",
+      "steps": [
+        {
+          "week": 1,
+          "chapter": "comprendre-le-toeic",
+          "why": "Connaître le format et se fixer un score cible (souvent 785 pour valider un diplôme d'ingénieur)."
+        },
+        {
+          "week": 1,
+          "chapter": "temps-verbaux",
+          "why": "Prétérit et present perfect : la base pour raconter ses projets."
+        },
+        {
+          "week": 2,
+          "chapter": "data-bi-outils",
+          "why": "Le vocabulaire SQL, ETL et Power BI du quotidien."
+        },
+        {
+          "week": 2,
+          "chapter": "emails-professionnels",
+          "why": "Échanges écrits avec les clients et les équipes métier."
+        },
+        {
+          "week": 3,
+          "chapter": "data-bi-restitution",
+          "why": "Recueillir un besoin, définir un KPI, présenter un insight."
+        },
+        {
+          "week": 3,
+          "chapter": "presentations-et-chiffres",
+          "why": "Commenter des tendances et lire les nombres sans erreur."
+        },
+        {
+          "week": 4,
+          "chapter": "it-production-et-donnees",
+          "why": "Incidents de chargement, post-mortems et qualité des données."
+        },
+        {
+          "week": 4,
+          "chapter": "reunions-et-appels",
+          "why": "Animer un atelier et intervenir en visio."
+        },
+        {
+          "week": 5,
+          "chapter": "entretien-en-anglais",
+          "why": "Se présenter, traduire son parcours et utiliser la méthode STAR."
+        },
+        {
+          "week": 5,
+          "chapter": "formes-des-mots",
+          "why": "Le premier gisement de points en partie 5."
+        },
+        {
+          "week": 6,
+          "chapter": "strategies-listening",
+          "why": "Méthode pour les parties 1 à 4."
+        },
+        {
+          "week": 6,
+          "chapter": "strategies-reading",
+          "why": "Gestion du temps pour les parties 5 à 7, puis test blanc."
+        }
       ]
     },
     {
@@ -30,18 +147,66 @@
       "summary": "Préparer le TOEIC en maîtrisant le vocabulaire de la marque, des campagnes digitales et de leurs indicateurs.",
       "outcome": "Présenter une campagne, comparer des performances et négocier avec une agence en anglais.",
       "steps": [
-        { "week": 1, "chapter": "comprendre-le-toeic", "why": "Connaître le format et se fixer un score cible." },
-        { "week": 1, "chapter": "formes-des-mots", "why": "Adjectifs et adverbes : le cœur d'un discours marketing précis." },
-        { "week": 2, "chapter": "marketing-strategie", "why": "Cible, positionnement, marque et lancement." },
-        { "week": 2, "chapter": "emails-professionnels", "why": "Briefs, relances agences et e-mails clients." },
-        { "week": 3, "chapter": "marketing-digital", "why": "Funnel, KPI et A/B tests." },
-        { "week": 3, "chapter": "presentations-et-chiffres", "why": "Commenter des résultats de campagne." },
-        { "week": 4, "chapter": "accords-et-pronoms", "why": "Quantifieurs (fewer, less, many) pour comparer des chiffres." },
-        { "week": 4, "chapter": "reunions-et-appels", "why": "Défendre une idée en réunion créative." },
-        { "week": 5, "chapter": "negociation-et-diplomatie", "why": "Négocier un budget média ou un contrat d'agence." },
-        { "week": 5, "chapter": "conditionnels", "why": "Formuler des scénarios et des offres." },
-        { "week": 6, "chapter": "vocabulaire-business", "why": "Le socle lexical commun du TOEIC." },
-        { "week": 6, "chapter": "strategies-reading", "why": "Gestion du temps pour les parties 5 à 7, puis test blanc." }
+        {
+          "week": 1,
+          "chapter": "comprendre-le-toeic",
+          "why": "Connaître le format et se fixer un score cible."
+        },
+        {
+          "week": 1,
+          "chapter": "formes-des-mots",
+          "why": "Adjectifs et adverbes : le cœur d'un discours marketing précis."
+        },
+        {
+          "week": 2,
+          "chapter": "marketing-strategie",
+          "why": "Cible, positionnement, marque et lancement."
+        },
+        {
+          "week": 2,
+          "chapter": "emails-professionnels",
+          "why": "Briefs, relances agences et e-mails clients."
+        },
+        {
+          "week": 3,
+          "chapter": "marketing-digital",
+          "why": "Funnel, KPI et A/B tests."
+        },
+        {
+          "week": 3,
+          "chapter": "presentations-et-chiffres",
+          "why": "Commenter des résultats de campagne."
+        },
+        {
+          "week": 4,
+          "chapter": "accords-et-pronoms",
+          "why": "Quantifieurs (fewer, less, many) pour comparer des chiffres."
+        },
+        {
+          "week": 4,
+          "chapter": "reunions-et-appels",
+          "why": "Défendre une idée en réunion créative."
+        },
+        {
+          "week": 5,
+          "chapter": "negociation-et-diplomatie",
+          "why": "Négocier un budget média ou un contrat d'agence."
+        },
+        {
+          "week": 5,
+          "chapter": "conditionnels",
+          "why": "Formuler des scénarios et des offres."
+        },
+        {
+          "week": 6,
+          "chapter": "vocabulaire-business",
+          "why": "Le socle lexical commun du TOEIC."
+        },
+        {
+          "week": 6,
+          "chapter": "strategies-reading",
+          "why": "Gestion du temps pour les parties 5 à 7, puis test blanc."
+        }
       ]
     },
     {
@@ -51,18 +216,66 @@
       "summary": "Préparer le TOEIC en apprenant à lire des états financiers et à commenter un reporting face au budget.",
       "outcome": "Présenter un reporting mensuel, expliquer des écarts et échanger avec des investisseurs en anglais.",
       "steps": [
-        { "week": 1, "chapter": "comprendre-le-toeic", "why": "Connaître le format et se fixer un score cible." },
-        { "week": 1, "chapter": "prepositions", "why": "by, to, from, within : la précision des chiffres en dépend." },
-        { "week": 2, "chapter": "finance-etats-financiers", "why": "Bilan, compte de résultat et faux amis comptables." },
-        { "week": 2, "chapter": "presentations-et-chiffres", "why": "Décrire une tendance et lire les nombres sans erreur." },
-        { "week": 3, "chapter": "finance-budget-et-reporting", "why": "Budget, forecast, écarts et trésorerie." },
-        { "week": 3, "chapter": "temps-verbaux", "why": "Year to date, since, by the end of : les temps du reporting." },
-        { "week": 4, "chapter": "emails-professionnels", "why": "Relances de paiement et demandes de justificatifs." },
-        { "week": 4, "chapter": "connecteurs", "why": "Expliquer causes et conséquences (due to, therefore)." },
-        { "week": 5, "chapter": "negociation-et-diplomatie", "why": "Négocier des délais de paiement ou un financement." },
-        { "week": 5, "chapter": "reunions-et-appels", "why": "Comités, revues budgétaires et calls investisseurs." },
-        { "week": 6, "chapter": "vocabulaire-business", "why": "Le socle lexical commun du TOEIC." },
-        { "week": 6, "chapter": "strategies-reading", "why": "Gestion du temps pour les parties 5 à 7, puis test blanc." }
+        {
+          "week": 1,
+          "chapter": "comprendre-le-toeic",
+          "why": "Connaître le format et se fixer un score cible."
+        },
+        {
+          "week": 1,
+          "chapter": "prepositions",
+          "why": "by, to, from, within : la précision des chiffres en dépend."
+        },
+        {
+          "week": 2,
+          "chapter": "finance-etats-financiers",
+          "why": "Bilan, compte de résultat et faux amis comptables."
+        },
+        {
+          "week": 2,
+          "chapter": "presentations-et-chiffres",
+          "why": "Décrire une tendance et lire les nombres sans erreur."
+        },
+        {
+          "week": 3,
+          "chapter": "finance-budget-et-reporting",
+          "why": "Budget, forecast, écarts et trésorerie."
+        },
+        {
+          "week": 3,
+          "chapter": "temps-verbaux",
+          "why": "Year to date, since, by the end of : les temps du reporting."
+        },
+        {
+          "week": 4,
+          "chapter": "emails-professionnels",
+          "why": "Relances de paiement et demandes de justificatifs."
+        },
+        {
+          "week": 4,
+          "chapter": "connecteurs",
+          "why": "Expliquer causes et conséquences (due to, therefore)."
+        },
+        {
+          "week": 5,
+          "chapter": "negociation-et-diplomatie",
+          "why": "Négocier des délais de paiement ou un financement."
+        },
+        {
+          "week": 5,
+          "chapter": "reunions-et-appels",
+          "why": "Comités, revues budgétaires et calls investisseurs."
+        },
+        {
+          "week": 6,
+          "chapter": "vocabulaire-business",
+          "why": "Le socle lexical commun du TOEIC."
+        },
+        {
+          "week": 6,
+          "chapter": "strategies-reading",
+          "why": "Gestion du temps pour les parties 5 à 7, puis test blanc."
+        }
       ]
     },
     {
@@ -72,18 +285,66 @@
       "summary": "Préparer le TOEIC en maîtrisant le vocabulaire d'une mission d'audit, du contrôle interne et de la conformité.",
       "outcome": "Conduire un entretien d'audit, rédiger un constat et une recommandation en anglais.",
       "steps": [
-        { "week": 1, "chapter": "comprendre-le-toeic", "why": "Connaître le format et se fixer un score cible." },
-        { "week": 1, "chapter": "passif-et-relatives", "why": "Le passif structure tous les constats d'audit." },
-        { "week": 2, "chapter": "audit-mission", "why": "Le déroulé d'une mission, des éléments probants à l'opinion." },
-        { "week": 2, "chapter": "temps-verbaux", "why": "Past perfect et present perfect pour situer les constats." },
-        { "week": 3, "chapter": "audit-controle-interne", "why": "Contrôles, séparation des tâches et conformité." },
-        { "week": 3, "chapter": "finance-etats-financiers", "why": "Lire les états financiers audités." },
-        { "week": 4, "chapter": "emails-professionnels", "why": "Demandes de documents et convocations formelles." },
-        { "week": 4, "chapter": "conditionnels", "why": "Formuler risques et scénarios (if…, unless…)." },
-        { "week": 5, "chapter": "reunions-et-appels", "why": "Mener des entretiens et des réunions de clôture." },
-        { "week": 5, "chapter": "negociation-et-diplomatie", "why": "Présenter un constat délicat sans braquer l'audité." },
-        { "week": 6, "chapter": "prepositions", "why": "in accordance with, comply with : les collocations réglementaires." },
-        { "week": 6, "chapter": "strategies-reading", "why": "Gestion du temps pour les parties 5 à 7, puis test blanc." }
+        {
+          "week": 1,
+          "chapter": "comprendre-le-toeic",
+          "why": "Connaître le format et se fixer un score cible."
+        },
+        {
+          "week": 1,
+          "chapter": "passif-et-relatives",
+          "why": "Le passif structure tous les constats d'audit."
+        },
+        {
+          "week": 2,
+          "chapter": "audit-mission",
+          "why": "Le déroulé d'une mission, des éléments probants à l'opinion."
+        },
+        {
+          "week": 2,
+          "chapter": "temps-verbaux",
+          "why": "Past perfect et present perfect pour situer les constats."
+        },
+        {
+          "week": 3,
+          "chapter": "audit-controle-interne",
+          "why": "Contrôles, séparation des tâches et conformité."
+        },
+        {
+          "week": 3,
+          "chapter": "finance-etats-financiers",
+          "why": "Lire les états financiers audités."
+        },
+        {
+          "week": 4,
+          "chapter": "emails-professionnels",
+          "why": "Demandes de documents et convocations formelles."
+        },
+        {
+          "week": 4,
+          "chapter": "conditionnels",
+          "why": "Formuler risques et scénarios (if…, unless…)."
+        },
+        {
+          "week": 5,
+          "chapter": "reunions-et-appels",
+          "why": "Mener des entretiens et des réunions de clôture."
+        },
+        {
+          "week": 5,
+          "chapter": "negociation-et-diplomatie",
+          "why": "Présenter un constat délicat sans braquer l'audité."
+        },
+        {
+          "week": 6,
+          "chapter": "prepositions",
+          "why": "in accordance with, comply with : les collocations réglementaires."
+        },
+        {
+          "week": 6,
+          "chapter": "strategies-reading",
+          "why": "Gestion du temps pour les parties 5 à 7, puis test blanc."
+        }
       ]
     }
   ]

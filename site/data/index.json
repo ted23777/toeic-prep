@@ -221,6 +221,27 @@
       "category": "Métier : Audit",
       "summary": "Risques, contrôles, séparation des tâches, conformité réglementaire et recommandations.",
       "toeicParts": []
+    },
+    {
+      "id": "data-bi-outils",
+      "title": "Data & BI : SQL, ETL et Power BI",
+      "category": "Métier : Data & BI",
+      "summary": "Le vocabulaire technique d'un consultant BI : modélisation, requêtes, chargements et rapports Power BI.",
+      "toeicParts": []
+    },
+    {
+      "id": "data-bi-restitution",
+      "title": "Data & BI : recueillir le besoin et restituer",
+      "category": "Métier : Data & BI",
+      "summary": "Questionner un métier, définir un indicateur, présenter des insights avec la bonne prudence.",
+      "toeicParts": []
+    },
+    {
+      "id": "entretien-en-anglais",
+      "title": "Réussir un entretien en anglais",
+      "category": "Carrière",
+      "summary": "Se présenter, raconter un projet avec la méthode STAR, traduire son parcours français, poser les bonnes questions.",
+      "toeicParts": []
     }
   ]
 }

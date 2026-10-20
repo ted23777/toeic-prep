@@ -1,7 +1,7 @@
 # TOEIC Prep
 
 Application web de révision du **TOEIC Listening & Reading** et de l'**anglais des affaires** :
-23 fiches de cours avec quiz corrigé, 4 **parcours métier** de 6 semaines (IT & Data, Marketing,
+26 fiches de cours avec quiz corrigé, 5 **parcours métier** de 6 semaines (IT & Projets, Data & BI, Marketing,
 Finance, Audit & Conformité) et un mode d'entraînement aléatoire, global ou par parcours.
 
 - **Aucun compte**, aucun cookie, aucun stockage local, aucun traceur.

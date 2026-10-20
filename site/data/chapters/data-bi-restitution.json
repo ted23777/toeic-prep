@@ -1,0 +1,92 @@
+{
+  "id": "data-bi-restitution",
+  "title": "Data & BI : recueillir le besoin et restituer",
+  "category": "Métier : Data & BI",
+  "summary": "Questionner un métier, définir un indicateur, présenter des insights avec la bonne prudence.",
+  "toeicParts": [],
+  "sections": [
+    {
+      "heading": "Recueillir le besoin",
+      "blocks": [
+        { "type": "p", "text": "Un consultant BI passe beaucoup de temps en **requirements gathering** (recueil des besoins). Quelques questions utiles :" },
+        {
+          "type": "list",
+          "items": [
+            "What **decision** will this dashboard help you **make**?",
+            "Who **will be using** the report, and how often?",
+            "How do you **define** an « active customer »?",
+            "Which **source** is the **single source of truth** for this figure?",
+            "What level of **detail** do you need: daily, monthly, by store?",
+            "Is there an existing report we **should** replace?"
+          ]
+        },
+        { "type": "tip", "label": "Astuce pro", "text": "Reformulez pour valider : « **So, if I understand correctly**, you need… **Is that right?** » Cela évite des semaines de développement sur un malentendu." }
+      ]
+    },
+    {
+      "heading": "Définir et expliquer un indicateur",
+      "blocks": [
+        { "type": "example", "en": "The churn rate **is defined as** the number of customers **who cancelled** during the month **divided by** the number of active customers **at the start of** the month.", "fr": "Le taux d'attrition est défini comme le nombre de clients ayant résilié dans le mois divisé par le nombre de clients actifs en début de mois." },
+        {
+          "type": "list",
+          "items": [
+            "**divided by** / **multiplied by** / **minus** / **plus**",
+            "**excluding** / **including** returns",
+            "**on a rolling 12-month basis** (sur 12 mois glissants)",
+            "**year over year** (YoY) / **month over month** (MoM)",
+            "**average** / **median** / **total** / **count of**"
+          ]
+        }
+      ]
+    },
+    {
+      "heading": "Présenter des insights avec nuance",
+      "blocks": [
+        { "type": "p", "text": "Les données suggèrent rarement une certitude. Un bon analyste dose ses affirmations :" },
+        {
+          "type": "table",
+          "head": ["Niveau de certitude", "Expressions"],
+          "rows": [
+            ["Fort", "The data **clearly shows** that… · There is **a strong** correlation between…"],
+            ["Moyen", "The data **suggests** that… · This **appears to be** driven by…"],
+            ["Faible", "It **might** be related to… · We **can't rule out**… · **Further analysis is needed**."]
+          ]
+        },
+        { "type": "warning", "label": "Piège", "text": "**Correlation is not causation** : « Sales rose when we launched the campaign » ne prouve pas que la campagne a causé la hausse. Dites « **coincided with** » plutôt que « **caused** »." },
+        { "type": "example", "en": "**The key takeaway is that** 80% of returns **come from** two product lines. **We recommend** investigating the packaging **before** the next season.", "fr": "Le message clé : 80 % des retours viennent de deux gammes. Nous recommandons d'examiner l'emballage avant la prochaine saison." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "Quelle question aide le plus à cadrer un nouveau tableau de bord ?",
+      "choices": ["Which colours do you like?", "What decision will this dashboard help you make?", "Do you prefer bar charts?", "How many pages do you want?"],
+      "answer": 1,
+      "explanation": "Partir de la **décision** à prendre permet de choisir les bons indicateurs."
+    },
+    {
+      "q": "Sales increased the same month the campaign started. The most rigorous phrasing is:",
+      "choices": ["The campaign caused the increase.", "The increase coincided with the campaign.", "The campaign proves the increase.", "The increase is because of the campaign, obviously."],
+      "answer": 1,
+      "explanation": "**coincided with** décrit la simultanéité sans affirmer une causalité non démontrée."
+    },
+    {
+      "q": "« Sur 12 mois glissants » se dit :",
+      "choices": ["on a sliding 12 months", "on a rolling 12-month basis", "on 12 rolling months base", "during 12 gliding months"],
+      "answer": 1,
+      "explanation": "Expression consacrée : **on a rolling 12-month basis** (ou trailing twelve months, TTM)."
+    },
+    {
+      "q": "So, if I understand correctly, you need the report by store and by week. ______?",
+      "choices": ["Is that right", "Is it true for you", "Are you agree", "Do you agree with me or not"],
+      "answer": 0,
+      "explanation": "**Is that right?** valide une reformulation. « Are you agree » est une erreur classique (on dit « Do you agree? »)."
+    },
+    {
+      "q": "The data ______ that the drop is linked to the price change, but further analysis is needed.",
+      "choices": ["proves", "suggests", "demonstrates clearly", "confirms definitely"],
+      "answer": 1,
+      "explanation": "« further analysis is needed » indique une certitude moyenne → **suggests**."
+    }
+  ]
+}

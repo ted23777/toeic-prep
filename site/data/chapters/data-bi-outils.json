@@ -1,0 +1,107 @@
+{
+  "id": "data-bi-outils",
+  "title": "Data & BI : SQL, ETL et Power BI",
+  "category": "Métier : Data & BI",
+  "summary": "Le vocabulaire technique d'un consultant BI : modélisation, requêtes, chargements et rapports Power BI.",
+  "toeicParts": [],
+  "sections": [
+    {
+      "heading": "Architecture et chargement des données",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["data warehouse / data mart", "entrepôt de données / magasin de données"],
+            ["data lake / lakehouse", "lac de données / architecture lakehouse"],
+            ["ETL / ELT (extract, transform, load)", "extraction, transformation, chargement"],
+            ["staging area / staging table", "zone de transit / table de transit"],
+            ["full load / incremental load", "chargement complet / incrémental"],
+            ["source system", "système source"],
+            ["data lineage", "traçabilité des données"],
+            ["job / package (SSIS) / to schedule", "traitement / package / planifier"],
+            ["to fail / to rerun", "échouer / relancer"],
+            ["data governance / data catalog", "gouvernance / catalogue de données"]
+          ]
+        },
+        { "type": "example", "en": "The nightly job **loads** the sales data **incrementally**, so only rows **modified since** the last run **are processed**.", "fr": "Le traitement de nuit charge les ventes en incrémental : seules les lignes modifiées depuis la dernière exécution sont traitées." }
+      ]
+    },
+    {
+      "heading": "SQL et modélisation",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["query / to query a table", "requête / interroger une table"],
+            ["join (inner, left, full outer)", "jointure (interne, gauche, externe complète)"],
+            ["to aggregate / GROUP BY", "agréger / regrouper"],
+            ["primary key / foreign key", "clé primaire / clé étrangère"],
+            ["index / stored procedure / view", "index / procédure stockée / vue"],
+            ["duplicate rows / null values", "doublons / valeurs nulles"],
+            ["star schema / snowflake schema", "schéma en étoile / en flocon"],
+            ["fact table / dimension table", "table de faits / table de dimension"],
+            ["granularity / grain", "granularité"],
+            ["slowly changing dimension (SCD)", "dimension à évolution lente"]
+          ]
+        },
+        { "type": "tip", "label": "Astuce pro", "text": "En anglais, on dit « **to run** a query » (exécuter) et « the query **returns** 200 rows ». « Request » désigne une demande métier, pas une requête SQL." }
+      ]
+    },
+    {
+      "heading": "Power BI",
+      "blocks": [
+        {
+          "type": "table",
+          "head": ["Anglais", "Français"],
+          "rows": [
+            ["semantic model (anciennement dataset)", "modèle sémantique"],
+            ["measure / calculated column", "mesure / colonne calculée"],
+            ["filter context / row context", "contexte de filtre / de ligne"],
+            ["relationship (one-to-many)", "relation (un-à-plusieurs)"],
+            ["Import mode / DirectQuery", "mode Import / DirectQuery"],
+            ["scheduled refresh / gateway", "actualisation planifiée / passerelle"],
+            ["row-level security (RLS)", "sécurité au niveau des lignes"],
+            ["visual / slicer / drill-down / tooltip", "visuel / segment / exploration descendante / info-bulle"],
+            ["workspace / app", "espace de travail / application"]
+          ]
+        },
+        { "type": "example", "en": "I **created** a measure that **calculates** year-over-year growth, and I **set up** RLS so that each regional manager **only sees** their own data.", "fr": "J'ai créé une mesure qui calcule la croissance d'une année sur l'autre et configuré la RLS pour que chaque responsable régional ne voie que ses données." },
+        { "type": "warning", "label": "Erreur fréquente", "text": "« Le rapport ne s'actualise pas » : « The report **doesn't refresh** » ou « The refresh **is failing** », pas « actualize » (qui veut dire concrétiser)." }
+      ]
+    }
+  ],
+  "quiz": [
+    {
+      "q": "In a star schema, the table that stores the numeric events (sales, quantities) is the:",
+      "choices": ["dimension table", "fact table", "staging table", "lookup view"],
+      "answer": 1,
+      "explanation": "La **fact table** contient les mesures ; les **dimension tables** contiennent les axes d'analyse (date, produit, client)."
+    },
+    {
+      "q": "Only the rows modified since the last run are loaded. This is a(n):",
+      "choices": ["full load", "incremental load", "data lineage", "snapshot"],
+      "answer": 1,
+      "explanation": "**Incremental load** = chargement incrémental."
+    },
+    {
+      "q": "« J'ai exécuté la requête » se dit :",
+      "choices": ["I executed the request.", "I ran the query.", "I launched the demand.", "I did the request."],
+      "answer": 1,
+      "explanation": "**to run a query**. « request » désigne une demande, pas une requête SQL."
+    },
+    {
+      "q": "Each sales manager should see only their region in the report. You need to configure:",
+      "choices": ["a slicer", "row-level security", "a calculated column", "DirectQuery"],
+      "answer": 1,
+      "explanation": "La **row-level security (RLS)** filtre les données selon l'utilisateur. Un slicer peut être modifié par l'utilisateur, ce n'est pas une sécurité."
+    },
+    {
+      "q": "The dashboard shows yesterday's figures because the scheduled refresh ______ last night.",
+      "choices": ["failed", "has failing", "was fail", "fails"],
+      "answer": 0,
+      "explanation": "Événement passé daté (last night) → **prétérit** : failed."
+    }
+  ]
+}
